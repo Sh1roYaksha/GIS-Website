@@ -63,27 +63,6 @@ const HomePage = () => {
     }
   ];
 
-  const portfolioItems = [
-    {
-      title: "Urban Development Mapping",
-      description: "Comprehensive aerial mapping for major residential development project",
-      image: "https://images.pexels.com/photos/7937294/pexels-photo-7937294.jpeg",
-      category: "Residential"
-    },
-    {
-      title: "Infrastructure Survey",
-      description: "Precision DGPS survey for highway construction planning",
-      image: "https://images.unsplash.com/photo-1536420123832-cd5867531583?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxhZXJpYWwlMjBtYXBwaW5nfGVufDB8fHx8MTc0ODYwNzM3MXww&ixlib=rb-4.1.0&q=85",
-      category: "Infrastructure"
-    },
-    {
-      title: "Commercial Complex Survey",
-      description: "Complete topographic and boundary survey for commercial development",
-      image: "https://images.pexels.com/photos/8333104/pexels-photo-8333104.jpeg",
-      category: "Commercial"
-    }
-  ];
-
   const clientTypes = [
     {
       icon: <Users className="w-8 h-8" />,
