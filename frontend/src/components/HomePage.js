@@ -1,0 +1,462 @@
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
+import { 
+  Drone, 
+  MapPin, 
+  Target, 
+  Award, 
+  Users, 
+  Building, 
+  Phone, 
+  Mail,
+  ArrowRight,
+  CheckCircle,
+  Star,
+  Globe,
+  Shield,
+  Camera,
+  Compass,
+  Navigation
+} from 'lucide-react';
+
+const HomePage = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(true);
+  }, []);
+
+  // Animation variants
+  const fadeInUp = {
+    initial: { opacity: 0, y: 60 },
+    animate: { opacity: 1, y: 0 },
+    transition: { duration: 0.6 }
+  };
+
+  const staggerContainer = {
+    animate: { 
+      transition: { 
+        staggerChildren: 0.1 
+      } 
+    }
+  };
+
+  const services = [
+    {
+      icon: <Drone className="w-12 h-12" />,
+      title: "Drone Surveys",
+      description: "Advanced aerial surveying with high-precision drones for topographic mapping, site inspection, and comprehensive land analysis.",
+      image: "https://images.unsplash.com/photo-1706380003139-7471c33ca2b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxkcm9uZSUyMHN1cnZleWluZ3xlbnwwfHx8fDE3NDg2MDczNjF8MA&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      icon: <Target className="w-12 h-12" />,
+      title: "DGPS Surveys",
+      description: "Differential Global Positioning System technology providing centimeter-level accuracy for precise positioning and boundary mapping.",
+      image: "https://images.unsplash.com/photo-1682663810771-89d21838530f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwyfHxsYW5kJTIwc3VydmV5aW5nfGVufDB8fHx8MTc0ODYwNzM3Nnww&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      icon: <Compass className="w-12 h-12" />,
+      title: "Comprehensive Surveys",
+      description: "Complete range of surveying services including topographic, boundary, construction, and environmental surveys for all project needs.",
+      image: "https://images.unsplash.com/photo-1682663813232-0546d2a7ee49?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxsYW5kJTIwc3VydmV5aW5nfGVufDB8fHx8MTc0ODYwNzM3Nnww&ixlib=rb-4.1.0&q=85"
+    }
+  ];
+
+  const portfolioItems = [
+    {
+      title: "Urban Development Mapping",
+      description: "Comprehensive aerial mapping for major residential development project",
+      image: "https://images.pexels.com/photos/7937294/pexels-photo-7937294.jpeg",
+      category: "Residential"
+    },
+    {
+      title: "Infrastructure Survey",
+      description: "Precision DGPS survey for highway construction planning",
+      image: "https://images.unsplash.com/photo-1536420123832-cd5867531583?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxhZXJpYWwlMjBtYXBwaW5nfGVufDB8fHx8MTc0ODYwNzM3MXww&ixlib=rb-4.1.0&q=85",
+      category: "Infrastructure"
+    },
+    {
+      title: "Commercial Complex Survey",
+      description: "Complete topographic and boundary survey for commercial development",
+      image: "https://images.pexels.com/photos/8333104/pexels-photo-8333104.jpeg",
+      category: "Commercial"
+    }
+  ];
+
+  const clientTypes = [
+    {
+      icon: <Users className="w-8 h-8" />,
+      title: "Private Property Owners",
+      description: "Boundary surveys, topographic mapping, and property assessments for individual landowners and developers."
+    },
+    {
+      icon: <Building className="w-8 h-8" />,
+      title: "Government Agencies",
+      description: "Municipal mapping, infrastructure planning, and compliance surveys for local and federal government projects."
+    },
+    {
+      icon: <Shield className="w-8 h-8" />,
+      title: "Engineering Firms",
+      description: "Technical surveying support, construction layout, and precision measurements for engineering projects."
+    }
+  ];
+
+  return (
+    <div className="min-h-screen bg-slate-50">
+      {/* Navigation */}
+      <motion.nav 
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex justify-between items-center h-16">
+            <div className="flex items-center space-x-2">
+              <Navigation className="w-8 h-8 text-blue-600" />
+              <span className="text-xl font-bold text-slate-800">GIS Survey Pro</span>
+            </div>
+            <div className="hidden md:flex items-center space-x-8">
+              <a href="#services" className="text-slate-600 hover:text-blue-600 transition-colors">Services</a>
+              <a href="#portfolio" className="text-slate-600 hover:text-blue-600 transition-colors">Portfolio</a>
+              <a href="#coverage" className="text-slate-600 hover:text-blue-600 transition-colors">Coverage</a>
+              <a href="#contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Get Quote</a>
+            </div>
+          </div>
+        </div>
+      </motion.nav>
+
+      {/* Hero Section */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('https://images.pexels.com/photos/32211979/pexels-photo-32211979.jpeg')`,
+          }}
+        >
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-slate-800/70 to-emerald-900/60"></div>
+        </div>
+        
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto"
+        >
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            Precision Surveying
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+              Advanced Technology
+            </span>
+          </h1>
+          <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            Professional GIS survey services using cutting-edge drone technology and DGPS systems. 
+            Delivering reliable expertise for property owners, government agencies, and engineering firms.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all shadow-xl flex items-center justify-center space-x-2"
+            >
+              <span>Get Free Quote</span>
+              <ArrowRight className="w-5 h-5" />
+            </motion.button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-white/10 backdrop-blur-md text-white border border-white/20 px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/20 transition-all"
+            >
+              View Portfolio
+            </motion.button>
+          </div>
+        </motion.div>
+      </section>
+
+      {/* Services Section */}
+      <section id="services" className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+              Advanced Survey Services
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Comprehensive surveying solutions powered by the latest technology and delivered by experienced professionals.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-3 gap-8"
+          >
+            {services.map((service, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                className="group relative bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 overflow-hidden"
+              >
+                <div className="relative z-10">
+                  <div className="text-blue-600 mb-6 group-hover:text-blue-700 transition-colors">
+                    {service.icon}
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-800 mb-4">{service.title}</h3>
+                  <p className="text-slate-600 mb-6 leading-relaxed">{service.description}</p>
+                  <img 
+                    src={service.image} 
+                    alt={service.title}
+                    className="w-full h-48 object-cover rounded-lg shadow-lg"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-emerald-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Why Choose Us Section */}
+      <section className="py-20 bg-gradient-to-br from-slate-800 to-blue-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Why Choose Our Expertise
+            </h2>
+            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+              Decades of combined experience, cutting-edge technology, and unwavering commitment to precision.
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              { icon: <Award className="w-12 h-12" />, title: "15+ Years Experience", desc: "Proven track record in complex surveying projects" },
+              { icon: <Star className="w-12 h-12" />, title: "99.9% Accuracy", desc: "Industry-leading precision with advanced equipment" },
+              { icon: <CheckCircle className="w-12 h-12" />, title: "Licensed Professionals", desc: "Certified surveyors and licensed operators" },
+              { icon: <Globe className="w-12 h-12" />, title: "Statewide Coverage", desc: "Comprehensive service area across the region" }
+            ].map((item, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                initial="initial"
+                whileInView="animate"
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="text-center group"
+              >
+                <div className="text-blue-400 mb-4 flex justify-center group-hover:text-emerald-400 transition-colors">
+                  {item.icon}
+                </div>
+                <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
+                <p className="text-blue-100">{item.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Portfolio Section */}
+      <section id="portfolio" className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+              Recent Projects
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Explore our portfolio of successful surveying projects across various industries and applications.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-3 gap-8"
+          >
+            {portfolioItems.map((item, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
+              >
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={item.image} 
+                    alt={item.title}
+                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
+                  />
+                  <div className="absolute top-4 left-4">
+                    <span className="bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                      {item.category}
+                    </span>
+                  </div>
+                </div>
+                <div className="p-6">
+                  <h3 className="text-xl font-bold text-slate-800 mb-2">{item.title}</h3>
+                  <p className="text-slate-600">{item.description}</p>
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Client Types Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+              Serving Diverse Clients
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Tailored surveying solutions for every client type, from individual property owners to large-scale government projects.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-3 gap-8"
+          >
+            {clientTypes.map((client, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                className="text-center p-8 bg-gradient-to-br from-blue-50 to-emerald-50 rounded-2xl hover:shadow-lg transition-all duration-300"
+              >
+                <div className="text-blue-600 mb-4 flex justify-center">
+                  {client.icon}
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">{client.title}</h3>
+                <p className="text-slate-600">{client.description}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="py-20 bg-gradient-to-br from-blue-900 to-slate-800">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ready to Start Your Project?
+            </h2>
+            <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
+              Get a free consultation and quote for your surveying needs. Our experts are ready to help you achieve precise results.
+            </p>
+            
+            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
+              <motion.a
+                href="tel:+1234567890"
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center space-x-3 bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-all"
+              >
+                <Phone className="w-5 h-5" />
+                <span>(555) 123-4567</span>
+              </motion.a>
+              <motion.a
+                href="mailto:info@gissurvey.com"
+                whileHover={{ scale: 1.05 }}
+                className="flex items-center space-x-3 bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-all"
+              >
+                <Mail className="w-5 h-5" />
+                <span>info@gissurvey.com</span>
+              </motion.a>
+            </div>
+
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-emerald-600 text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-emerald-700 transition-all shadow-xl"
+            >
+              Schedule Free Consultation
+            </motion.button>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-slate-900 text-white py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <div className="flex items-center space-x-2 mb-4">
+                <Navigation className="w-6 h-6 text-blue-400" />
+                <span className="text-lg font-bold">GIS Survey Pro</span>
+              </div>
+              <p className="text-slate-400">
+                Professional surveying services with cutting-edge technology and reliable expertise.
+              </p>
+            </div>
+            <div>
+              <h4 className="font-bold mb-4">Services</h4>
+              <ul className="space-y-2 text-slate-400">
+                <li>Drone Surveys</li>
+                <li>DGPS Surveys</li>
+                <li>Topographic Mapping</li>
+                <li>Boundary Surveys</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold mb-4">Coverage Areas</h4>
+              <ul className="space-y-2 text-slate-400">
+                <li>Residential Properties</li>
+                <li>Commercial Developments</li>
+                <li>Infrastructure Projects</li>
+                <li>Government Contracts</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-bold mb-4">Contact Info</h4>
+              <ul className="space-y-2 text-slate-400">
+                <li>Phone: (555) 123-4567</li>
+                <li>Email: info@gissurvey.com</li>
+                <li>Licensed & Insured</li>
+                <li>24/7 Support</li>
+              </ul>
+            </div>
+          </div>
+          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
+            <p>&copy; 2024 GIS Survey Pro. All rights reserved. Licensed Professional Surveyors.</p>
+          </div>
+        </div>
+      </footer>
+    </div>
+  );
+};
+
+export default HomePage;
