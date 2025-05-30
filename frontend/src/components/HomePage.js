@@ -114,7 +114,7 @@ const HomePage = () => {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
               <Navigation className="w-8 h-8 text-blue-600" />
-              <span className="text-xl font-bold text-slate-800">GIS Survey Pro</span>
+              <span className="text-xl font-bold text-slate-800">AMP Geosolutions</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
               <a href="#services" className="text-slate-600 hover:text-blue-600 transition-colors">Services</a>
