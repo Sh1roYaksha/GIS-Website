@@ -243,7 +243,7 @@ const HomePage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: <Award className="w-12 h-12" />, title: "15+ Years Experience", desc: "Proven track record in complex surveying projects" },
+              { icon: <Award className="w-12 h-12" />, title: "6 Years Experience", desc: "Proven track record in complex surveying projects" },
               { icon: <Star className="w-12 h-12" />, title: "99.9% Accuracy", desc: "Industry-leading precision with advanced equipment" },
               { icon: <CheckCircle className="w-12 h-12" />, title: "Licensed Professionals", desc: "Certified surveyors and licensed operators" },
               { icon: <Globe className="w-12 h-12" />, title: "Statewide Coverage", desc: "Comprehensive service area across the region" }
