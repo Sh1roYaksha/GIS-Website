@@ -43,7 +43,7 @@ const HomePage = () => {
 
   const services = [
     {
-      icon: <Drone className="w-12 h-12" />,
+      icon: <Plane className="w-12 h-12" />,
       title: "Drone Surveys",
       description: "Advanced aerial surveying with high-precision drones for topographic mapping, site inspection, and comprehensive land analysis.",
       image: "https://images.unsplash.com/photo-1706380003139-7471c33ca2b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxkcm9uZSUyMHN1cnZleWluZ3xlbnwwfHx8fDE3NDg2MDczNjF8MA&ixlib=rb-4.1.0&q=85"
