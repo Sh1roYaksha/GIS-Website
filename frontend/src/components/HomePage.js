@@ -18,6 +18,7 @@ import {
   Compass,
   Navigation
 } from 'lucide-react';
+import { portfolioItems } from '../data/portfolioData';
 
 const HomePage = () => {
   const [isLoaded, setIsLoaded] = useState(false);
