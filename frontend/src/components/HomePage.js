@@ -292,8 +292,29 @@ const HomePage = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-slate-800 mb-2">{item.title}</h3>
-                  <p className="text-slate-600">{item.description}</p>
+                  <div className="flex justify-between items-start mb-2">
+                    <h3 className="text-xl font-bold text-slate-800">{item.title}</h3>
+                    <span className="text-sm text-slate-500">{item.completionDate}</span>
+                  </div>
+                  <p className="text-slate-600 mb-3">{item.description}</p>
+                  {item.location && (
+                    <p className="text-sm text-slate-500 mb-2">
+                      <MapPin className="w-4 h-4 inline mr-1" />
+                      {item.location} • {item.projectSize}
+                    </p>
+                  )}
+                  {item.services && (
+                    <div className="flex flex-wrap gap-1 mt-3">
+                      {item.services.slice(0, 3).map((service, serviceIndex) => (
+                        <span 
+                          key={serviceIndex}
+                          className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-medium"
+                        >
+                          {service}
+                        </span>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </motion.div>
             ))}
