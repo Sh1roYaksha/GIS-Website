@@ -416,7 +416,7 @@ const HomePage = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <Navigation className="w-6 h-6 text-blue-400" />
-                <span className="text-lg font-bold">GIS Survey Pro</span>
+                <span className="text-lg font-bold">AMP Geosolutions</span>
               </div>
               <p className="text-slate-400">
                 Professional surveying services with cutting-edge technology and reliable expertise.
