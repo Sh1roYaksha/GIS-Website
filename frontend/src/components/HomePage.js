@@ -271,10 +271,10 @@ const HomePage = () => {
             className="text-center mb-16"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
-              Recent Projects
+              Our Projects
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Explore our portfolio of successful surveying projects across various industries and applications.
+              Showcasing our comprehensive portfolio of surveying and GIS projects across government, infrastructure, and development sectors.
             </p>
           </motion.div>
 
@@ -283,53 +283,94 @@ const HomePage = () => {
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
-            className="grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+            className="space-y-12"
           >
-            {portfolioCategories.map((item, index) => (
-              <motion.div
-                key={index}
-                variants={fadeInUp}
-                className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300"
-              >
-                <div className="relative overflow-hidden">
-                  <img 
-                    src={item.image} 
-                    alt={item.title}
-                    className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className="bg-red-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                      {item.category}
-                    </span>
-                  </div>
-                </div>
-                <div className="p-6">
-                  <div className="flex justify-between items-start mb-2">
-                    <h3 className="text-xl font-bold text-slate-800">{item.title}</h3>
-                    <span className="text-sm text-slate-500">{item.completionDate}</span>
-                  </div>
-                  <p className="text-slate-600 mb-3">{item.description}</p>
-                  {item.location && (
-                    <p className="text-sm text-slate-500 mb-2">
-                      <MapPin className="w-4 h-4 inline mr-1" />
-                      {item.location} • {item.projectSize}
+            {portfolioCategories.map((category, categoryIndex) => {
+              const getIcon = (iconType) => {
+                switch(iconType) {
+                  case 'layout': return <Layers className="w-8 h-8" />;
+                  case 'city': return <Building2 className="w-8 h-8" />;
+                  case 'property': return <Calculator className="w-8 h-8" />;
+                  case 'railway': return <Train className="w-8 h-8" />;
+                  case 'water': return <Droplets className="w-8 h-8" />;
+                  case 'government': return <Building className="w-8 h-8" />;
+                  default: return <Star className="w-8 h-8" />;
+                }
+              };
+
+              return (
+                <motion.div
+                  key={categoryIndex}
+                  variants={fadeInUp}
+                  className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
+                >
+                  {/* Category Header */}
+                  <div className="bg-gradient-to-r from-red-600 to-red-700 p-6 text-white">
+                    <div className="flex items-center space-x-4">
+                      <div className="bg-white/20 p-3 rounded-lg">
+                        {getIcon(category.icon)}
+                      </div>
+                      <div>
+                        <h3 className="text-2xl font-bold">{category.title}</h3>
+                        <p className="text-red-100 text-lg">{category.subtitle}</p>
+                      </div>
+                    </div>
+                    <p className="mt-4 text-red-50 leading-relaxed">
+                      {category.description}
                     </p>
-                  )}
-                  {item.services && (
-                    <div className="flex flex-wrap gap-1 mt-3">
-                      {item.services.slice(0, 3).map((service, serviceIndex) => (
-                        <span 
-                          key={serviceIndex}
-                          className="bg-red-100 text-red-700 px-2 py-1 rounded text-xs font-medium"
+                  </div>
+
+                  {/* Projects List */}
+                  <div className="p-6">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                      {category.projects.map((project, projectIndex) => (
+                        <motion.div
+                          key={projectIndex}
+                          variants={fadeInUp}
+                          className="bg-slate-50 rounded-lg p-4 hover:bg-red-50 transition-colors duration-200 border border-slate-200 hover:border-red-200"
                         >
-                          {service}
-                        </span>
+                          <div className="flex items-start space-x-3">
+                            <div className="bg-red-600 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                              <span className="text-white text-xs font-bold">{projectIndex + 1}</span>
+                            </div>
+                            <p className="text-slate-700 font-medium leading-relaxed">{project}</p>
+                          </div>
+                        </motion.div>
                       ))}
                     </div>
-                  )}
-                </div>
-              </motion.div>
-            ))}
+                  </div>
+                </motion.div>
+              );
+            })}
+          </motion.div>
+
+          {/* Portfolio Summary */}
+          <motion.div
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="mt-16 text-center bg-gradient-to-r from-red-600 to-red-700 rounded-2xl p-8 text-white"
+          >
+            <h3 className="text-3xl font-bold mb-4">Project Excellence</h3>
+            <div className="grid md:grid-cols-4 gap-6">
+              <div>
+                <div className="text-4xl font-bold text-red-200">40,000+</div>
+                <div className="text-red-100">Properties Surveyed</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-red-200">15+</div>
+                <div className="text-red-100">Railway Divisions</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-red-200">8+</div>
+                <div className="text-red-100">States Covered</div>
+              </div>
+              <div>
+                <div className="text-4xl font-bold text-red-200">6</div>
+                <div className="text-red-100">Years Experience</div>
+              </div>
+            </div>
           </motion.div>
         </div>
       </section>
