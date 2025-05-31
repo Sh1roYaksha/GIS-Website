@@ -137,7 +137,7 @@ const HomePage = () => {
             <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-blue-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-blue-700 transition-all shadow-xl flex items-center justify-center space-x-2"
+              className="bg-red-600 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition-all shadow-xl flex items-center justify-center space-x-2"
             >
               <span>Get Free Quote</span>
               <ArrowRight className="w-5 h-5" />
