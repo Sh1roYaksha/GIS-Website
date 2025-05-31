@@ -237,11 +237,11 @@ const HomePage = () => {
                 transition={{ delay: index * 0.1 }}
                 className="text-center group"
               >
-                <div className="text-blue-400 mb-4 flex justify-center group-hover:text-emerald-400 transition-colors">
+                <div className="text-red-400 mb-4 flex justify-center group-hover:text-white transition-colors">
                   {item.icon}
                 </div>
                 <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>
-                <p className="text-blue-100">{item.desc}</p>
+                <p className="text-red-100">{item.desc}</p>
               </motion.div>
             ))}
           </div>
