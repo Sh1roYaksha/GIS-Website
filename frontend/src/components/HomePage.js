@@ -182,10 +182,10 @@ const HomePage = () => {
               <motion.div
                 key={index}
                 variants={fadeInUp}
-                className="group relative bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 overflow-hidden"
+                className="group relative bg-gradient-to-br from-slate-50 to-red-50 rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 overflow-hidden"
               >
                 <div className="relative z-10">
-                  <div className="text-blue-600 mb-6 group-hover:text-blue-700 transition-colors">
+                  <div className="text-red-600 mb-6 group-hover:text-red-700 transition-colors">
                     {service.icon}
                   </div>
                   <h3 className="text-2xl font-bold text-slate-800 mb-4">{service.title}</h3>
