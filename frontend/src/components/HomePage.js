@@ -66,6 +66,12 @@ const HomePage = () => {
       title: "Comprehensive Surveys",
       description: "Complete range of surveying services including topographic, boundary, construction, and environmental surveys for all project needs.",
       image: "https://images.unsplash.com/photo-1682663813232-0546d2a7ee49?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxsYW5kJTIwc3VydmV5aW5nfGVufDB8fHx8MTc0ODYwNzM3Nnww&ixlib=rb-4.1.0&q=85"
+    },
+    {
+      icon: <Layers className="w-12 h-12" />,
+      title: "Ortho Image Processing",
+      description: "We specialize in advanced drone image processing to deliver precise, high resolution data for industries like construction, urban planning, and land surveying. Our cutting-edge technology transforms aerial imagery into actionable insights, enhancing project efficiency, accuracy, and decision making. From topographic mapping to 3D modeling and progress monitoring, we provide innovative solutions that empower clients to achieve their goals with unparalleled precision.",
+      image: "https://images.unsplash.com/photo-1682663813232-0546d2a7ee49?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxsYW5kJTIwc3VydmV5aW5nfGVufDB8fHx8MTc0ODYwNzM3Nnww&ixlib=rb-4.1.0&q=85"
     }
   ];
 
