@@ -114,7 +114,7 @@ const HomePage = () => {
             backgroundImage: `url('https://images.pexels.com/photos/32211979/pexels-photo-32211979.jpeg')`,
           }}
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-blue-900/80 via-slate-800/70 to-emerald-900/60"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-red-900/80 via-slate-800/70 to-red-800/60"></div>
         </div>
         
         <motion.div 
