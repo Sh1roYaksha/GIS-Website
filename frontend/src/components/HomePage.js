@@ -196,7 +196,7 @@ const HomePage = () => {
                     className="w-full h-48 object-cover rounded-lg shadow-lg"
                   />
                 </div>
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600/5 to-emerald-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-red-600/5 to-red-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </motion.div>
             ))}
           </motion.div>
