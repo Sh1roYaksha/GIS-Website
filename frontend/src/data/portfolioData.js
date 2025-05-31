@@ -1,7 +1,78 @@
-// AMP Geosolutions Portfolio Data
-// TO ADD NEW PORTFOLIO ITEMS: Simply add a new object to the portfolioItems array below
-// TO EDIT EXISTING ITEMS: Modify the properties of any existing item
+// AMP Geosolutions Portfolio Data - ACTUAL PROJECTS
+export const portfolioCategories = [
+  {
+    title: "Projects Completed Under PSKS-2021 Rajasthan",
+    subtitle: "GIS Based Layout Plans",
+    projects: [
+      "Neem Ka Thana",
+      "Reengus", 
+      "Paota-Pragpura",
+      "Lalsot",
+      "Neemrana"
+    ],
+    icon: "layout",
+    description: "Comprehensive GIS-based layout planning under Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) 2021"
+  },
+  {
+    title: "GIS Based Existing City Survey",
+    subtitle: "Urban Infrastructure Mapping",
+    projects: [
+      "Udaipurwati",
+      "Ramgarh (Alwar)"
+    ],
+    icon: "city",
+    description: "Detailed GIS mapping and surveying of existing urban infrastructure and city layouts"
+  },
+  {
+    title: "Property Tax Management System (PTIMS)",
+    subtitle: "Revenue Management Solutions",
+    projects: [
+      "Ratangarh"
+    ],
+    icon: "property",
+    description: "Implementation of comprehensive property tax information management systems"
+  },
+  {
+    title: "Railway Gradient Verification Topographic Survey",
+    subtitle: "Indian Railways Infrastructure",
+    projects: [
+      "SSE/PW/N/KOTA in Kota Division",
+      "SSE/BUNDI in Kota Division", 
+      "SSE/Mandalgarh in Kota Division",
+      "DEN/West - Bikaner Division",
+      "DEN/South - Bikaner Division",
+      "Delhi Division",
+      "DEN/East - Bikaner Division",
+      "Jaipur Division"
+    ],
+    icon: "railway",
+    description: "Precision topographic surveys for railway gradient verification across multiple divisions"
+  },
+  {
+    title: "Jal Jeevan Mission (JJM)",
+    subtitle: "Water Infrastructure Development",
+    projects: [
+      "Jahazpur Tehsil of Bhilwara District of the State of Rajasthan",
+      "Aurangabad Region of the State of Maharashtra", 
+      "Rampurhat and Danta Region of the State of West Bengal"
+    ],
+    icon: "water",
+    description: "Supporting India's ambitious water supply mission through comprehensive surveying and mapping"
+  },
+  {
+    title: "Delhi Development Authority (DDA)",
+    subtitle: "Urban Development Projects",
+    projects: [
+      "Conducting DGPS Survey and Creating Shape File of a Plot for DDA Vacant Lands for Delhi Development Authority, Ministry of Housing & Urban Affairs, Government of India",
+      "Conducting Aerial Survey of Sanjay Van under DDA-Hort. (IV) New Delhi",
+      "Conducting Door-To-Door Property Survey at various Regions in Delhi Pradhan Mantri Urban Development Yojana (PM-UDAY) Approximately - 40,000 Properties"
+    ],
+    icon: "government",
+    description: "Large-scale urban development and property surveying projects for Government of India"
+  }
+];
 
+// Legacy portfolio items for reference (can be removed)
 export const portfolioItems = [
   {
     title: "Urban Development Mapping",
@@ -33,41 +104,4 @@ export const portfolioItems = [
     completionDate: "2024",
     services: ["Boundary Survey", "Topographic Mapping", "Drone Survey"]
   }
-  
-  // TO ADD NEW PORTFOLIO ITEM, COPY THE TEMPLATE BELOW AND FILL IN YOUR DETAILS:
-  /*
-  {
-    title: "Your Project Title",
-    description: "Detailed description of the project, services provided, and key achievements.",
-    image: "YOUR_IMAGE_URL_HERE", // You can use URLs from Unsplash, Pexels, or your own hosted images
-    category: "Residential" | "Commercial" | "Infrastructure" | "Government", // Choose one
-    location: "Project Location",
-    projectSize: "Size or scope",
-    completionDate: "Year",
-    services: ["Service 1", "Service 2", "Service 3"] // List of services provided
-  },
-  */
-];
-
-// Available categories for consistency:
-export const portfolioCategories = [
-  "Residential",
-  "Commercial", 
-  "Infrastructure",
-  "Government",
-  "Environmental",
-  "Industrial"
-];
-
-// Available services for consistency:
-export const availableServices = [
-  "Drone Survey",
-  "DGPS Survey", 
-  "Topographic Mapping",
-  "Boundary Survey",
-  "Construction Layout",
-  "Utility Mapping",
-  "Environmental Assessment",
-  "Site Planning",
-  "As-Built Survey"
 ];
