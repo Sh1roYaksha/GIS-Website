@@ -204,7 +204,7 @@ const HomePage = () => {
       </section>
 
       {/* Why Choose Us Section */}
-      <section className="py-20 bg-gradient-to-br from-slate-800 to-blue-900">
+      <section className="py-20 bg-gradient-to-br from-slate-800 to-red-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             variants={fadeInUp}
@@ -216,7 +216,7 @@ const HomePage = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Why Choose Our Expertise
             </h2>
-            <p className="text-xl text-blue-100 max-w-3xl mx-auto">
+            <p className="text-xl text-red-100 max-w-3xl mx-auto">
               Decades of combined experience, cutting-edge technology, and unwavering commitment to precision.
             </p>
           </motion.div>
