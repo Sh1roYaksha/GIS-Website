@@ -366,12 +366,86 @@ const HomePage = () => {
 
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gradient-to-br from-red-900 to-slate-800">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Contact Information & Map */}
+          <div className="grid lg:grid-cols-2 gap-12 mb-16">
+            {/* Contact Information */}
+            <motion.div
+              variants={fadeInUp}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              className="bg-white/10 backdrop-blur-md rounded-2xl p-8"
+            >
+              <h3 className="text-3xl font-bold text-white mb-6">Get In Touch</h3>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <div className="bg-red-600 p-3 rounded-lg">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">Phone</p>
+                    <a href="tel:+919587839666" className="text-red-200 hover:text-white transition-colors">
+                      +91-9587839666
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="bg-red-600 p-3 rounded-lg">
+                    <Mail className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">Email</p>
+                    <a href="mailto:Contact@ampgeosolution.com" className="text-red-200 hover:text-white transition-colors">
+                      Contact@ampgeosolution.com
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center space-x-4">
+                  <div className="bg-red-600 p-3 rounded-lg">
+                    <MapPin className="w-6 h-6 text-white" />
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold">Office Location</p>
+                    <p className="text-red-200">
+                      [Your Office Address Here]<br />
+                      [City, State, PIN Code]
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Office Map */}
+            <motion.div
+              variants={fadeInUp}
+              initial="initial"
+              whileInView="animate"
+              viewport={{ once: true }}
+              className="bg-white rounded-2xl p-2 shadow-2xl"
+            >
+              <div className="w-full h-80 bg-slate-200 rounded-xl flex items-center justify-center">
+                {/* Placeholder for Google Maps - Replace with your actual map embed */}
+                <div className="text-center">
+                  <MapPin className="w-12 h-12 text-red-600 mx-auto mb-4" />
+                  <h4 className="text-lg font-bold text-slate-800 mb-2">AMP Geosolutions Office</h4>
+                  <p className="text-slate-600 mb-4">Interactive map will be embedded here</p>
+                  <p className="text-sm text-slate-500">
+                    Please provide your office address to generate<br />
+                    the Google Maps embed code
+                  </p>
+                </div>
+              </div>
+            </motion.div>
+          </div>
+
+          {/* Call to Action */}
           <motion.div
             variants={fadeInUp}
             initial="initial"
             whileInView="animate"
             viewport={{ once: true }}
+            className="text-center"
           >
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to Start Your Project?
