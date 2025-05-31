@@ -365,7 +365,7 @@ const HomePage = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-blue-900 to-slate-800">
+      <section id="contact" className="py-20 bg-gradient-to-br from-red-900 to-slate-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
             variants={fadeInUp}
@@ -376,7 +376,7 @@ const HomePage = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
               Ready to Start Your Project?
             </h2>
-            <p className="text-xl text-blue-100 mb-12 max-w-2xl mx-auto">
+            <p className="text-xl text-red-100 mb-12 max-w-2xl mx-auto">
               Get a free consultation and quote for your surveying needs. Our experts are ready to help you achieve precise results.
             </p>
             
