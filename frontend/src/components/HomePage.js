@@ -16,9 +16,15 @@ import {
   Shield,
   Camera,
   Compass,
-  Navigation
+  Navigation,
+  Layers,
+  TreePine,
+  Calculator,
+  Train,
+  Droplets,
+  Building2
 } from 'lucide-react';
-import { portfolioItems } from '../data/portfolioData';
+import { portfolioCategories } from '../data/portfolioData';
 
 const HomePage = () => {
   const [isLoaded, setIsLoaded] = useState(false);
