@@ -382,20 +382,20 @@ const HomePage = () => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
               <motion.a
-                href="tel:+1234567890"
+                href="tel:+919587839666"
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center space-x-3 bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-all"
               >
                 <Phone className="w-5 h-5" />
-                <span>(555) 123-4567</span>
+                <span>+91-9587839666</span>
               </motion.a>
               <motion.a
-                href="mailto:info@gissurvey.com"
+                href="mailto:Contact@ampgeosolution.com"
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center space-x-3 bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-all"
               >
                 <Mail className="w-5 h-5" />
-                <span>info@gissurvey.com</span>
+                <span>Contact@ampgeosolution.com</span>
               </motion.a>
             </div>
 
