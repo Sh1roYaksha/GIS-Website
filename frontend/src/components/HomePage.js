@@ -351,9 +351,9 @@ const HomePage = () => {
               <motion.div
                 key={index}
                 variants={fadeInUp}
-                className="text-center p-8 bg-gradient-to-br from-blue-50 to-emerald-50 rounded-2xl hover:shadow-lg transition-all duration-300"
+                className="text-center p-8 bg-gradient-to-br from-red-50 to-white rounded-2xl hover:shadow-lg transition-all duration-300"
               >
-                <div className="text-blue-600 mb-4 flex justify-center">
+                <div className="text-red-600 mb-4 flex justify-center">
                   {client.icon}
                 </div>
                 <h3 className="text-xl font-bold text-slate-800 mb-4">{client.title}</h3>
