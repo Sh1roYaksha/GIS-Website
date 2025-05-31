@@ -308,7 +308,7 @@ const HomePage = () => {
                       {item.services.slice(0, 3).map((service, serviceIndex) => (
                         <span 
                           key={serviceIndex}
-                          className="bg-blue-100 text-blue-700 px-2 py-1 rounded text-xs font-medium"
+                          className="bg-red-100 text-red-700 px-2 py-1 rounded text-xs font-medium"
                         >
                           {service}
                         </span>
