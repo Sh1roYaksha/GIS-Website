@@ -408,8 +408,9 @@ const HomePage = () => {
                   <div>
                     <p className="text-white font-semibold">Office Location</p>
                     <p className="text-red-200">
-                      [Your Office Address Here]<br />
-                      [City, State, PIN Code]
+                      Shree Shyam Tower, Kedia Palace Rd,<br />
+                      Dadi Ka Phatak, Murlipura Scheme,<br />
+                      Murlipura, Jaipur, Rajasthan 302039
                     </p>
                   </div>
                 </div>
