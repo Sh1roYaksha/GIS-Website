@@ -426,7 +426,7 @@ const HomePage = () => {
               className="bg-white rounded-2xl p-2 shadow-2xl"
             >
               <iframe
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dpoJcJ6RP8QB5Y&q=Shree+Shyam+Tower+Kedia+Palace+Road+Murlipura+Jaipur+Rajasthan+302039"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.0!2d75.81234!3d26.91873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU1JzA3LjQiTiA3NcKwNDgnNDQuNCJF!5e0!3m2!1sen!2sin!4v1000000000000!5m2!1sen!2sin"
                 width="100%"
                 height="320"
                 style={{ border: 0 }}
