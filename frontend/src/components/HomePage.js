@@ -279,7 +279,7 @@ const HomePage = () => {
             viewport={{ once: true }}
             className="grid md:grid-cols-3 gap-8"
           >
-            {portfolioItems.map((item, index) => (
+            {portfolioCategories.map((item, index) => (
               <motion.div
                 key={index}
                 variants={fadeInUp}
