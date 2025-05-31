@@ -416,7 +416,7 @@ const HomePage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Navigation className="w-6 h-6 text-blue-400" />
+                <Navigation className="w-6 h-6 text-red-400" />
                 <span className="text-lg font-bold">AMP Geosolutions</span>
               </div>
               <p className="text-slate-400">
