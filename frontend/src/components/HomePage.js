@@ -125,11 +125,11 @@ const HomePage = () => {
         >
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
             Precision Surveying
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-white">
               Advanced Technology
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl text-red-100 mb-8 max-w-3xl mx-auto leading-relaxed">
             Professional GIS survey services using cutting-edge drone technology and DGPS systems. 
             Delivering reliable expertise for property owners, government agencies, and engineering firms.
           </p>
