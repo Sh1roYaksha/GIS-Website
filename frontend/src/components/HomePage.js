@@ -425,17 +425,30 @@ const HomePage = () => {
               viewport={{ once: true }}
               className="bg-white rounded-2xl p-2 shadow-2xl"
             >
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.0!2d75.81234!3d26.91873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDU1JzA3LjQiTiA3NcKwNDgnNDQuNCJF!5e0!3m2!1sen!2sin!4v1000000000000!5m2!1sen!2sin"
-                width="100%"
-                height="320"
-                style={{ border: 0 }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
-                className="rounded-xl"
-                title="AMP Geosolutions Office - Shree Shyam Tower, Jaipur"
-              ></iframe>
+              <div className="w-full h-80 bg-gradient-to-br from-slate-100 to-red-50 rounded-xl flex flex-col items-center justify-center p-6">
+                <MapPin className="w-16 h-16 text-red-600 mb-4" />
+                <h4 className="text-xl font-bold text-slate-800 mb-2">AMP Geosolutions Office</h4>
+                <p className="text-center text-slate-600 mb-4 leading-relaxed">
+                  <strong>Shree Shyam Tower</strong><br />
+                  Kedia Palace Rd, Dadi Ka Phatak<br />
+                  Murlipura Scheme, Murlipura<br />
+                  Jaipur, Rajasthan 302039
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <a 
+                    href="https://maps.app.goo.gl/VBAZ7DDuqP6LBSodA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-red-700 transition-colors text-sm font-medium flex items-center space-x-2"
+                  >
+                    <Globe className="w-4 h-4" />
+                    <span>Open in Google Maps</span>
+                  </a>
+                  <div className="bg-slate-200 text-slate-700 px-4 py-2 rounded-lg text-sm font-medium">
+                    Plus Code: XQC4+3W Jaipur
+                  </div>
+                </div>
+              </div>
             </motion.div>
           </div>
 
