@@ -426,7 +426,7 @@ const HomePage = () => {
               className="bg-white rounded-2xl p-2 shadow-2xl"
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.8844389462797!2d75.80846631406!3d26.918736283143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db563a851c5e5%3A0x1e9b8c8a7c5d4b3a!2sShree%20Shyam%20Tower%2C%20Kedia%20Palace%20Rd%2C%20Dadi%20Ka%20Phatak%2C%20Murlipura%20Scheme%2C%20Murlipura%2C%20Jaipur%2C%20Rajasthan%20302039!5e0!3m2!1sen!2sin!4v1645123456789!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dpoJcJ6RP8QB5Y&q=Shree+Shyam+Tower+Kedia+Palace+Road+Murlipura+Jaipur+Rajasthan+302039"
                 width="100%"
                 height="320"
                 style={{ border: 0 }}
