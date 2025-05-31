@@ -93,14 +93,14 @@ const HomePage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-2">
-              <Navigation className="w-8 h-8 text-blue-600" />
+              <Navigation className="w-8 h-8 text-red-600" />
               <span className="text-xl font-bold text-slate-800">AMP Geosolutions</span>
             </div>
             <div className="hidden md:flex items-center space-x-8">
-              <a href="#services" className="text-slate-600 hover:text-blue-600 transition-colors">Services</a>
-              <a href="#portfolio" className="text-slate-600 hover:text-blue-600 transition-colors">Portfolio</a>
-              <a href="#coverage" className="text-slate-600 hover:text-blue-600 transition-colors">Coverage</a>
-              <a href="#contact" className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors">Get Quote</a>
+              <a href="#services" className="text-slate-600 hover:text-red-600 transition-colors">Services</a>
+              <a href="#portfolio" className="text-slate-600 hover:text-red-600 transition-colors">Portfolio</a>
+              <a href="#coverage" className="text-slate-600 hover:text-red-600 transition-colors">Coverage</a>
+              <a href="#contact" className="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors">Get Quote</a>
             </div>
           </div>
         </div>
