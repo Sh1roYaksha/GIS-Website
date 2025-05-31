@@ -444,10 +444,8 @@ const HomePage = () => {
             <div>
               <h4 className="font-bold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-slate-400">
-                <li>Phone: (555) 123-4567</li>
-                <li>Email: info@gissurvey.com</li>
-                <li>Licensed & Insured</li>
-                <li>24/7 Support</li>
+                <li>Phone: +91-9587839666</li>
+                <li>Email: Contact@ampgeosolution.com</li>
               </ul>
             </div>
           </div>
