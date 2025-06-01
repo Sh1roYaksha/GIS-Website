@@ -53,7 +53,7 @@ const HomePage = () => {
       icon: <Plane className="w-12 h-12" />,
       title: "Drone Surveys",
       description: "Advanced aerial surveying with high-precision drones for topographic mapping, site inspection, and comprehensive land analysis.",
-      image: "https://images.unsplash.com/photo-1706380003139-7471c33ca2b2?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwxfHxkcm9uZSUyMHN1cnZleWluZ3xlbnwwfHx8fDE3NDg2MDczNjF8MA&ixlib=rb-4.1.0&q=85"
+      image: "https://images.pexels.com/photos/32211979/pexels-photo-32211979.jpeg"
     },
     {
       icon: <Target className="w-12 h-12" />,
@@ -65,7 +65,7 @@ const HomePage = () => {
       icon: <Compass className="w-12 h-12" />,
       title: "Comprehensive Surveys",
       description: "Complete range of surveying services including topographic, boundary, construction, and environmental surveys for all project needs.",
-      image: "https://images.unsplash.com/photo-1682663813232-0546d2a7ee49?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxsYW5kJTIwc3VydmV5aW5nfGVufDB8fHx8MTc0ODYwNzM3Nnww&ixlib=rb-4.1.0&q=85"
+      image: "https://images.pexels.com/photos/5802827/pexels-photo-5802827.jpeg"
     },
     {
       icon: <Layers className="w-12 h-12" />,
