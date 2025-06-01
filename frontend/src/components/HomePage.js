@@ -28,10 +28,46 @@ import { portfolioCategories } from '../data/portfolioData';
 
 const HomePage = () => {
   const [isLoaded, setIsLoaded] = useState(false);
+  const [showContactForm, setShowContactForm] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    company: '',
+    message: '',
+    serviceType: ''
+  });
+  const [formSubmitted, setFormSubmitted] = useState(false);
 
   useEffect(() => {
     setIsLoaded(true);
   }, []);
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    // Here you would typically send the form data to your backend
+    console.log('Form submitted:', formData);
+    setFormSubmitted(true);
+    setTimeout(() => {
+      setShowContactForm(false);
+      setFormSubmitted(false);
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        company: '',
+        message: '',
+        serviceType: ''
+      });
+    }, 2000);
+  };
+
+  const handleInputChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
 
   // Animation variants
   const fadeInUp = {
