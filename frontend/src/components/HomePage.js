@@ -421,6 +421,79 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Products Section */}
+      <section id="products" className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+              Our Products
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Comprehensive software solutions for modern governance and management systems.
+            </p>
+          </motion.div>
+
+          <motion.div 
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            {[
+              {
+                title: "E-Municipal",
+                description: "Comprehensive municipal management system for digital governance and citizen services.",
+                icon: <Building2 className="w-12 h-12" />
+              },
+              {
+                title: "E-Office",
+                description: "Digital office management solution streamlining administrative processes and documentation.",
+                icon: <Building className="w-12 h-12" />
+              },
+              {
+                title: "Land Allotment",
+                description: "Advanced land allotment management system for efficient property allocation and tracking.",
+                icon: <MapPin className="w-12 h-12" />
+              },
+              {
+                title: "Hospital Information Management System",
+                description: "Integrated healthcare management solution for hospitals and medical facilities.",
+                icon: <Shield className="w-12 h-12" />
+              },
+              {
+                title: "Industrial Area Management System",
+                description: "Comprehensive management platform for industrial areas and manufacturing zones.",
+                icon: <Target className="w-12 h-12" />
+              },
+              {
+                title: "Legal Metrology",
+                description: "Legal metrology management system ensuring compliance and standardization.",
+                icon: <CheckCircle className="w-12 h-12" />
+              }
+            ].map((product, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                className="bg-white rounded-2xl p-8 hover:shadow-2xl transition-all duration-300 group"
+              >
+                <div className="text-red-600 mb-6 group-hover:text-red-700 transition-colors">
+                  {product.icon}
+                </div>
+                <h3 className="text-xl font-bold text-slate-800 mb-4">{product.title}</h3>
+                <p className="text-slate-600">{product.description}</p>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contact" className="py-20 bg-gradient-to-br from-red-900 to-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
