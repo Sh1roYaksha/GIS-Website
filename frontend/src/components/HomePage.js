@@ -665,6 +665,161 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Contact Form Modal */}
+      {showContactForm && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.9 }}
+            className="bg-white rounded-2xl p-8 max-w-2xl w-full max-h-[90vh] overflow-y-auto relative"
+          >
+            {/* Close Button */}
+            <button
+              onClick={() => setShowContactForm(false)}
+              className="absolute top-4 right-4 text-slate-400 hover:text-slate-600 transition-colors"
+            >
+              <X className="w-6 h-6" />
+            </button>
+
+            {/* Form Header */}
+            <div className="mb-8">
+              <h3 className="text-3xl font-bold text-slate-800 mb-2">Get In Touch</h3>
+              <p className="text-slate-600">Fill out the form below and we'll get back to you within 24 hours.</p>
+            </div>
+
+            {formSubmitted ? (
+              <div className="text-center py-12">
+                <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+                <h4 className="text-2xl font-bold text-slate-800 mb-2">Thank You!</h4>
+                <p className="text-slate-600">Your message has been sent successfully. We'll contact you soon.</p>
+              </div>
+            ) : (
+              <form onSubmit={handleFormSubmit} className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="name" className="block text-sm font-medium text-slate-700 mb-2">
+                      Full Name *
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      required
+                      value={formData.name}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
+                      placeholder="Enter your full name"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="email" className="block text-sm font-medium text-slate-700 mb-2">
+                      Email Address *
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      required
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
+                      placeholder="Enter your email address"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label htmlFor="phone" className="block text-sm font-medium text-slate-700 mb-2">
+                      Phone Number *
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      required
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
+                      placeholder="Enter your phone number"
+                    />
+                  </div>
+                  <div>
+                    <label htmlFor="company" className="block text-sm font-medium text-slate-700 mb-2">
+                      Company/Organization
+                    </label>
+                    <input
+                      type="text"
+                      id="company"
+                      name="company"
+                      value={formData.company}
+                      onChange={handleInputChange}
+                      className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
+                      placeholder="Enter your company name"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label htmlFor="serviceType" className="block text-sm font-medium text-slate-700 mb-2">
+                    Service Required *
+                  </label>
+                  <select
+                    id="serviceType"
+                    name="serviceType"
+                    required
+                    value={formData.serviceType}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
+                  >
+                    <option value="">Select a service</option>
+                    <option value="drone-survey">Drone Survey</option>
+                    <option value="dgps-survey">DGPS Survey</option>
+                    <option value="comprehensive-survey">Comprehensive Survey</option>
+                    <option value="ortho-processing">Ortho Image Processing</option>
+                    <option value="software-solutions">Software Solutions</option>
+                    <option value="consultation">General Consultation</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-slate-700 mb-2">
+                    Project Details *
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows={4}
+                    value={formData.message}
+                    onChange={handleInputChange}
+                    className="w-full px-4 py-3 border border-slate-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500 transition-colors"
+                    placeholder="Please describe your project requirements, location, timeline, and any specific needs..."
+                  ></textarea>
+                </div>
+
+                <div className="flex gap-4 pt-4">
+                  <button
+                    type="button"
+                    onClick={() => setShowContactForm(false)}
+                    className="flex-1 px-6 py-3 border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition-colors"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    className="flex-1 px-6 py-3 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors font-semibold"
+                  >
+                    Send Message
+                  </button>
+                </div>
+              </form>
+            )}
+          </motion.div>
+        </div>
+      )}
+
       {/* Footer */}
       <footer className="bg-slate-900 text-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
