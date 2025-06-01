@@ -140,7 +140,7 @@ const HomePage = () => {
         className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-slate-200"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
+          <div className="flex justify-between items-center h-20">
             <div className="flex items-center space-x-2">
               <img 
                 src="/AMP%20Logo_001.png"
