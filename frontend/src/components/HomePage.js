@@ -594,7 +594,7 @@ const HomePage = () => {
               Ready to Start Your Project?
             </h2>
             <p className="text-xl text-red-100 mb-12 max-w-2xl mx-auto">
-              Get a free consultation and quote for your surveying needs. Our experts are ready to help you achieve precise results.
+              Contact our experts for professional surveying solutions. We're ready to help you achieve precise results.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
