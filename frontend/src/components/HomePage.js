@@ -22,7 +22,8 @@ import {
   Calculator,
   Train,
   Droplets,
-  Building2
+  Building2,
+  X
 } from 'lucide-react';
 import { portfolioCategories } from '../data/portfolioData';
 
