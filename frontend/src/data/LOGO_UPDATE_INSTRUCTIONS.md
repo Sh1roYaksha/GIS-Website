@@ -1,16 +1,26 @@
-/* IMPORTANT: Replace the logo URL in HomePage.js */
+/* CRITICAL: Replace Logo with Your Actual Logo File */
 
-To use your actual AMP logo:
+TO USE YOUR ACTUAL AMP LOGO:
 
-1. Save your logo image as "amp-logo.png" in the /app/frontend/public/ folder
+1. **Save your logo image** as "amp-logo.png" in the `/app/frontend/public/` folder
 
-2. In HomePage.js, replace the current logo src with:
-   src="/amp-logo.png"
+2. **Replace BOTH logo instances in HomePage.js:**
 
-3. The logo appears in two places:
-   - Navigation bar (around line 109)
-   - Footer (around line 637)
+   **Navigation Logo (around line 109):**
+   Find: src="data:image/png;base64,iVBORw0KGgo..."
+   Replace with: src="/amp-logo.png"
 
-Replace both instances of the logo src attribute with "/amp-logo.png"
+   **Footer Logo (around line 830):**
+   Find: src="data:image/png;base64,iVBORw0KGgo..."
+   Replace with: src="/amp-logo.png"
 
-Your logo should be optimized to around 200-300px wide for best results.
+3. **Logo specifications:**
+   - Recommended width: 200-300px
+   - Format: PNG with transparent background preferred
+   - File size: Under 100KB for optimal loading
+
+4. **After placing the logo file:**
+   - Restart the frontend: `sudo supervisorctl restart frontend`
+   - Clear browser cache to see updated logo
+
+**Current placeholder will be replaced with your actual AMP logo once uploaded.**
