@@ -654,6 +654,7 @@ const HomePage = () => {
             </div>
 
             <motion.button
+              onClick={() => setShowContactForm(true)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-red-600 text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition-all shadow-xl"
