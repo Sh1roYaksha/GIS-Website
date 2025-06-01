@@ -145,7 +145,7 @@ const HomePage = () => {
               <img 
                 src="/AMP%20Logo_001.png"
                 alt="AMP Geosolutions"
-                className="h-12 w-auto"
+                className="h-16 w-auto bg-white rounded-lg shadow-md p-2 hover:shadow-lg transition-all duration-300"
               />
             </div>
             <div className="hidden md:flex items-center space-x-8">
