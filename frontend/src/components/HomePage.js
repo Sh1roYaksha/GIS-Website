@@ -149,6 +149,7 @@ const HomePage = () => {
               />
             </div>
             <div className="hidden md:flex items-center space-x-8">
+              <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-slate-600 hover:text-red-600 transition-colors">Home</a>
               <a href="#services" className="text-slate-600 hover:text-red-600 transition-colors">Services</a>
               <a href="#portfolio" className="text-slate-600 hover:text-red-600 transition-colors">Portfolio</a>
               <a href="#products" className="text-slate-600 hover:text-red-600 transition-colors">Products</a>
