@@ -621,7 +621,7 @@ const HomePage = () => {
               whileTap={{ scale: 0.95 }}
               className="bg-red-600 text-white px-12 py-4 rounded-lg text-lg font-semibold hover:bg-red-700 transition-all shadow-xl"
             >
-              Schedule Free Consultation
+              Contact Us Today
             </motion.button>
           </motion.div>
         </div>
