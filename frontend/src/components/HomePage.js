@@ -70,8 +70,8 @@ const HomePage = () => {
     {
       icon: <Layers className="w-12 h-12" />,
       title: "Ortho Image Processing",
-      description: "We specialize in advanced drone image processing to deliver precise, high resolution data for industries like construction, urban planning, and land surveying. Our cutting-edge technology transforms aerial imagery into actionable insights, enhancing project efficiency, accuracy, and decision making. From topographic mapping to 3D modeling and progress monitoring, we provide innovative solutions that empower clients to achieve their goals with unparalleled precision.",
-      image: "https://images.unsplash.com/photo-1682663813232-0546d2a7ee49?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzh8MHwxfHNlYXJjaHwxfHxsYW5kJTIwc3VydmV5aW5nfGVufDB8fHx8MTc0ODYwNzM3Nnww&ixlib=rb-4.1.0&q=85"
+      description: "Advanced drone image processing delivering precise, high-resolution data for construction, urban planning, and land surveying. Our cutting-edge technology transforms aerial imagery into actionable insights for enhanced project efficiency and decision making.",
+      image: "https://images.pexels.com/photos/7937294/pexels-photo-7937294.jpeg"
     }
   ];
 
