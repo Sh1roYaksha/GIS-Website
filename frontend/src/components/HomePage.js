@@ -633,8 +633,11 @@ const HomePage = () => {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <div className="flex items-center space-x-2 mb-4">
-                <Navigation className="w-6 h-6 text-red-400" />
-                <span className="text-lg font-bold">AMP Geosolutions</span>
+                <img 
+                  src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 100'%3E%3Cg%3E%3C!-- Compass/Navigation Design --%3E%3Ccircle cx='50' cy='50' r='35' fill='none' stroke='%23808080' stroke-width='2'/%3E%3Ccircle cx='50' cy='50' r='25' fill='none' stroke='%2300a0a0' stroke-width='3'/%3E%3Cpolygon points='50,20 60,45 50,50 40,45' fill='%23dc2626'/%3E%3Cpolygon points='50,80 40,55 50,50 60,55' fill='%23808080'/%3E%3Cline x1='20' y1='50' x2='80' y2='50' stroke='%23000' stroke-width='2'/%3E%3Cline x1='50' y1='20' x2='50' y2='80' stroke='%23000' stroke-width='1'/%3E%3C!-- AMP Text --%3E%3Ctext x='120' y='45' font-family='Arial' font-size='28' font-weight='bold' fill='%23dc2626'%3EAMP%3C/text%3E%3Ctext x='205' y='45' font-family='Arial' font-size='18' fill='%23808080'%3ECONSULTING%3C/text%3E%3Ctext x='120' y='65' font-family='Arial' font-size='10' fill='%2300a0a0'%3ELet's do it...%3C/text%3E%3C/g%3E%3C/svg%3E"
+                  alt="AMP Geosolutions"
+                  className="h-6 w-auto"
+                />
               </div>
               <p className="text-slate-400">
                 Professional surveying services with cutting-edge technology and reliable expertise.
