@@ -206,7 +206,7 @@ const HomePage = () => {
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-red-100 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Professional GIS survey services using cutting-edge drone technology and DGPS systems. 
+            AMP Consulting is a ISO 9001:2015, 27001:2022, 20000-1:2018 Certified Professional GIS survey services using cutting-edge drone technology and DGPS systems. 
             Delivering reliable expertise for property owners, government agencies, and engineering firms.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
