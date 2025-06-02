@@ -44,23 +44,46 @@ const HomePage = () => {
     setIsLoaded(true);
   }, []);
 
-  const handleFormSubmit = (e) => {
+  const handleFormSubmit = async (e) => {
     e.preventDefault();
-    // Here you would typically send the form data to your backend
-    console.log('Form submitted:', formData);
-    setFormSubmitted(true);
-    setTimeout(() => {
-      setShowContactForm(false);
-      setFormSubmitted(false);
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        message: '',
-        serviceType: ''
+    
+    try {
+      const response = await fetch('https://formspree.io/f/xeokqopv', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          company: formData.company,
+          serviceType: formData.serviceType,
+          message: formData.message,
+        }),
       });
-    }, 2000);
+
+      if (response.ok) {
+        setFormSubmitted(true);
+        setTimeout(() => {
+          setShowContactForm(false);
+          setFormSubmitted(false);
+          setFormData({
+            name: '',
+            email: '',
+            phone: '',
+            company: '',
+            message: '',
+            serviceType: ''
+          });
+        }, 3000);
+      } else {
+        alert('There was an error sending your message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('There was an error sending your message. Please try again.');
+    }
   };
 
   const handleInputChange = (e) => {
