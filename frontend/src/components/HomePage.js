@@ -836,7 +836,7 @@ const HomePage = () => {
             <div>
               <div className="flex items-center space-x-2 mb-4">
                 <img 
-                  src="/AMP%20Logo_001.png"
+                  src="/favicon.svg"
                   alt="AMP Geosolutions"
                   className="h-6 w-auto"
                 />
