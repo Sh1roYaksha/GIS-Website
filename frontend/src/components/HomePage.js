@@ -562,8 +562,8 @@ const HomePage = () => {
                   </div>
                   <div>
                     <p className="text-white font-semibold">Phone</p>
-                    <a href="tel:+919587839666" className="text-red-200 hover:text-white transition-colors">
-                      +91-9587839666
+                    <a href="tel:0141-3187836" className="text-red-200 hover:text-white transition-colors">
+                      0141-3187836
                     </a>
                   </div>
                 </div>
@@ -645,12 +645,12 @@ const HomePage = () => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
               <motion.a
-                href="tel:+919587839666"
+                href="tel:0141-3187836"
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center space-x-3 bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-all"
               >
                 <Phone className="w-5 h-5" />
-                <span>+91-9587839666</span>
+                <span>0141-3187836</span>
               </motion.a>
               <motion.a
                 href="mailto:Contact@ampgeosolution.com"
