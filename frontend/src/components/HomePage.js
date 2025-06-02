@@ -421,7 +421,7 @@ const HomePage = () => {
             <h3 className="text-3xl font-bold mb-4">Project Excellence</h3>
             <div className="grid md:grid-cols-4 gap-6">
               <div>
-                <div className="text-4xl font-bold text-red-200">40,000+</div>
+                <div className="text-4xl font-bold text-red-200">50,000+</div>
                 <div className="text-red-100">Properties Surveyed</div>
               </div>
               <div>
