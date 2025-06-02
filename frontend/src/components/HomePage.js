@@ -166,7 +166,7 @@ const HomePage = () => {
           <div className="flex justify-between items-center h-24">
             <div className="flex items-center space-x-2">
               <img 
-                src="/AMP%20Logo_001.png"
+                src="/favicon.svg"
                 alt="AMP Geosolutions"
                 className="h-20 w-auto bg-white rounded-lg shadow-md p-2 hover:shadow-lg transition-all duration-300"
               />
