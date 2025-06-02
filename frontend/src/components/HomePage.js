@@ -608,8 +608,7 @@ const HomePage = () => {
                 <p className="text-center text-slate-600 mb-4 leading-relaxed">
                   <strong>Shree Shyam Tower</strong><br />
                   Kedia Palace Rd, Dadi Ka Phatak<br />
-                  Murlipura Scheme, Murlipura<br />
-                  Jaipur, Rajasthan 302039
+                  Murlipura, Jaipur, Rajasthan 302039
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3">
                   <a 
