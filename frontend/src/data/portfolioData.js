@@ -11,7 +11,7 @@ export const portfolioCategories = [
       "Neemrana"
     ],
     icon: "layout",
-    description: "Comprehensive GIS-based layout planning under Pradhan Mantri Krishi Sinchayee Yojana (PMKSY) 2021"
+    description: "Comprehensive GIS-based layout planning under Prashasan Shehron Ke Sang (PSKS) 2021"
   },
   {
     title: "GIS Based Existing City Survey",
