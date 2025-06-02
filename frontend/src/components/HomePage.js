@@ -585,8 +585,8 @@ const HomePage = () => {
                     <p className="text-white font-semibold">Office Location</p>
                     <p className="text-red-200">
                       Shree Shyam Tower, Kedia Palace Rd,<br />
-                      Dadi Ka Phatak, Murlipura Scheme,<br />
-                      Murlipura, Jaipur, Rajasthan 302039
+                      Dadi Ka Phatak, Murlipura,<br />
+                      Jaipur, Rajasthan 302039
                     </p>
                   </div>
                 </div>
