@@ -866,7 +866,7 @@ const HomePage = () => {
             <div>
               <h4 className="font-bold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-slate-400">
-                <li>Phone: +91-9587839666</li>
+                <li>Phone: 0141-3187836</li>
                 <li>Email: Contact@ampgeosolution.com</li>
               </ul>
             </div>
