@@ -360,9 +360,9 @@ const HomePage = () => {
               },
               {
                 name: "Pushpendra Kumar",
-                title: "Driver Expert", 
+                title: "GIS Manager", 
                 experience: "10+ years experience",
-                specialties: ["XL-6", "Baleno", "Dzire"]
+                specialties: ["Spatial Analysis", "Database Design", "Mapping Solutions"]
               },
               {
                 name: "Aryan Khan",
