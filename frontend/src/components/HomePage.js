@@ -346,6 +346,85 @@ const HomePage = () => {
         </div>
       </section>
 
+      {/* Our Expert Team Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            variants={fadeInUp}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="text-center mb-16"
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">
+              Our Expert Team
+            </h2>
+            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+              Licensed professionals with decades of combined experience
+            </p>
+          </motion.div>
+
+          <motion.div 
+            variants={staggerContainer}
+            initial="initial"
+            whileInView="animate"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-3 gap-8"
+          >
+            {[
+              {
+                name: "Rajesh Kumar, PLS",
+                title: "Principal Surveyor",
+                experience: "15+ years experience",
+                specialties: ["Boundary Surveys", "Legal Descriptions", "DGPS Operations"]
+              },
+              {
+                name: "Priya Sharma, GISP",
+                title: "GIS Director", 
+                experience: "12+ years experience",
+                specialties: ["Spatial Analysis", "Database Design", "Mapping Solutions"]
+              },
+              {
+                name: "Vikram Singh",
+                title: "Drone Operations Manager",
+                experience: "8+ years experience",
+                specialties: ["UAV Mapping", "Photogrammetry", "Aerial Surveys"]
+              }
+            ].map((member, index) => (
+              <motion.div
+                key={index}
+                variants={fadeInUp}
+                className="text-center bg-slate-50 rounded-2xl p-8 hover:shadow-lg transition-all duration-300"
+              >
+                {/* Profile Icon */}
+                <div className="w-20 h-20 bg-gradient-to-br from-red-100 to-red-200 rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Users className="w-10 h-10 text-red-600" />
+                </div>
+
+                {/* Name and Title */}
+                <h3 className="text-xl font-bold text-slate-800 mb-2">{member.name}</h3>
+                <p className="text-red-600 font-semibold mb-4">{member.title}</p>
+
+                {/* Experience */}
+                <p className="text-slate-600 mb-6">{member.experience}</p>
+
+                {/* Specialties */}
+                <div className="flex flex-wrap gap-2 justify-center">
+                  {member.specialties.map((specialty, specialtyIndex) => (
+                    <span 
+                      key={specialtyIndex}
+                      className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium"
+                    >
+                      {specialty}
+                    </span>
+                  ))}
+                </div>
+              </motion.div>
+            ))}
+          </motion.div>
+        </div>
+      </section>
+
       {/* Portfolio Section */}
       <section id="portfolio" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
