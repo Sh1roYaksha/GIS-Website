@@ -391,7 +391,7 @@ const HomePage = () => {
                   className="bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden"
                 >
                   {/* Category Header */}
-                  <div className="bg-gradient-to-r from-red-600 to-red-700 p-6 text-white">
+                  <div className="bg-gradient-to-r from-red-500 to-slate-600 p-6 text-white">
                     <div className="flex items-center space-x-4">
                       <div className="bg-white/20 p-3 rounded-lg">
                         {getIcon(category.icon)}
@@ -410,18 +410,21 @@ const HomePage = () => {
                   <div className="p-6">
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                       {category.projects.map((project, projectIndex) => (
-                        <motion.div
+                        <motion.button
                           key={projectIndex}
                           variants={fadeInUp}
-                          className="bg-slate-50 rounded-lg p-4 hover:bg-red-50 transition-colors duration-200 border border-slate-200 hover:border-red-200"
+                          onClick={() => handleProjectClick(project, category.title)}
+                          className="bg-slate-50 rounded-lg p-4 hover:bg-red-50 transition-colors duration-200 border border-slate-200 hover:border-red-200 cursor-pointer text-left w-full"
                         >
                           <div className="flex items-start space-x-3">
                             <div className="bg-red-600 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                               <span className="text-white text-xs font-bold">{projectIndex + 1}</span>
                             </div>
-                            <p className="text-slate-700 font-medium leading-relaxed">{project}</p>
+                            <p className="text-slate-700 font-medium leading-relaxed hover:text-red-700 transition-colors">
+                              {project}
+                            </p>
                           </div>
-                        </motion.div>
+                        </motion.button>
                       ))}
                     </div>
                   </div>
