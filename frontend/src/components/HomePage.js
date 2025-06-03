@@ -757,51 +757,6 @@ const HomePage = () => {
         </div>
       </section>
 
-      {/* Project Image Modal */}
-      {showProjectModal && selectedProject && (
-        <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50 p-4">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            exit={{ opacity: 0, scale: 0.9 }}
-            className="bg-white rounded-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden relative"
-          >
-            {/* Close Button */}
-            <button
-              onClick={() => setShowProjectModal(false)}
-              className="absolute top-4 right-4 z-10 bg-white rounded-full p-2 shadow-lg hover:shadow-xl transition-all"
-            >
-              <X className="w-6 h-6 text-slate-600" />
-            </button>
-
-            {/* Modal Header */}
-            <div className="bg-gradient-to-r from-red-500 to-slate-600 p-6 text-white">
-              <h3 className="text-2xl font-bold mb-2">{selectedProject.name}</h3>
-              <p className="text-red-100">{selectedProject.category}</p>
-            </div>
-
-            {/* Project Image */}
-            <div className="p-6">
-              <div className="relative">
-                <img 
-                  src={selectedProject.image} 
-                  alt={selectedProject.name}
-                  className="w-full h-auto max-h-96 object-contain rounded-lg shadow-lg"
-                  onError={(e) => {
-                    e.target.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300' fill='%23f1f5f9'%3E%3Crect width='400' height='300' fill='%23f1f5f9'/%3E%3Ctext x='200' y='150' text-anchor='middle' fill='%2364748b' font-family='Arial' font-size='16'%3EProject Image Loading...%3C/text%3E%3C/svg%3E";
-                  }}
-                />
-              </div>
-              <div className="mt-6 text-center">
-                <p className="text-slate-600">
-                  Sample map/survey data for <strong>{selectedProject.name}</strong> project
-                </p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      )}
-
       {/* Contact Form Modal */}
       {showContactForm && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
