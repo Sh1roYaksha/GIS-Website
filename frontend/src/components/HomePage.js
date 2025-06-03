@@ -356,13 +356,13 @@ const HomePage = () => {
                 name: "Yograj Sharma",
                 title: "Field Manager",
                 experience: "15+ years experience",
-                specialties: ["Boundary Surveys", "Legal Descriptions", "DGPS Operations"]
+                specialties: ["Topographic Survey", "Government Engagements", "DGPS Operations"]
               },
               {
                 name: "Pushpendra Kumar",
-                title: "GIS Manager", 
+                title: "Driver Expert", 
                 experience: "10+ years experience",
-                specialties: ["Spatial Analysis", "Database Design", "Mapping Solutions"]
+                specialties: ["XL-6", "Baleno", "Dzire"]
               },
               {
                 name: "Aryan Khan",
