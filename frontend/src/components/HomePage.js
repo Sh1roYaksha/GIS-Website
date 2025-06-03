@@ -30,6 +30,8 @@ import { portfolioCategories } from '../data/portfolioData';
 const HomePage = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [showContactForm, setShowContactForm] = useState(false);
+  const [showProjectModal, setShowProjectModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -43,6 +45,24 @@ const HomePage = () => {
   useEffect(() => {
     setIsLoaded(true);
   }, []);
+
+  // Function to handle project click
+  const handleProjectClick = (projectName, categoryTitle) => {
+    // Convert project name to filename format
+    const filename = projectName.toLowerCase()
+      .replace(/[()]/g, '') // Remove parentheses
+      .replace(/\s+/g, '-') // Replace spaces with hyphens
+      .replace(/\//g, '-') // Replace slashes with hyphens
+      .replace(/,/g, '') // Remove commas
+      + '.jpg';
+    
+    setSelectedProject({
+      name: projectName,
+      category: categoryTitle,
+      image: `/project-images/${filename}`
+    });
+    setShowProjectModal(true);
+  };
 
   const handleFormSubmit = async (e) => {
     e.preventDefault();
