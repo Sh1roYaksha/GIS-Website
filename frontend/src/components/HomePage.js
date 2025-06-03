@@ -39,6 +39,8 @@ const HomePage = () => {
     serviceType: ''
   });
   const [formSubmitted, setFormSubmitted] = useState(false);
+  const [showProjectModal, setShowProjectModal] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   useEffect(() => {
     setIsLoaded(true);
