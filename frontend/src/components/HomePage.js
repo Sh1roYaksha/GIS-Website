@@ -469,21 +469,20 @@ const HomePage = () => {
                   <div className="p-6">
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                       {category.projects.map((project, projectIndex) => (
-                        <motion.button
+                        <motion.div
                           key={projectIndex}
                           variants={fadeInUp}
-                          onClick={() => handleProjectClick(project, category.title)}
-                          className="bg-slate-50 rounded-lg p-4 hover:bg-red-50 transition-colors duration-200 border border-slate-200 hover:border-red-200 cursor-pointer text-left w-full"
+                          className="bg-slate-50 rounded-lg p-4 hover:bg-red-50 transition-colors duration-200 border border-slate-200 hover:border-red-200"
                         >
                           <div className="flex items-start space-x-3">
                             <div className="bg-red-600 w-6 h-6 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                               <span className="text-white text-xs font-bold">{projectIndex + 1}</span>
                             </div>
-                            <p className="text-slate-700 font-medium leading-relaxed hover:text-red-700 transition-colors">
+                            <p className="text-slate-700 font-medium leading-relaxed">
                               {project}
                             </p>
                           </div>
-                        </motion.button>
+                        </motion.div>
                       ))}
                     </div>
                   </div>
