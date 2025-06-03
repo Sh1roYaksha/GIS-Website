@@ -359,8 +359,8 @@ const HomePage = () => {
                 specialties: ["Boundary Surveys", "Legal Descriptions", "DGPS Operations"]
               },
               {
-                name: "Manoj Kumar Yadav",
-                title: "GIS Director", 
+                name: "Pushpendra Kumar",
+                title: "GIS Manager", 
                 experience: "10+ years experience",
                 specialties: ["Spatial Analysis", "Database Design", "Mapping Solutions"]
               },
