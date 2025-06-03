@@ -353,19 +353,19 @@ const HomePage = () => {
           >
             {[
               {
-                name: "Rajesh Kumar, PLS",
-                title: "Principal Surveyor",
+                name: "Yograj Sharma",
+                title: "Field Manager",
                 experience: "15+ years experience",
                 specialties: ["Boundary Surveys", "Legal Descriptions", "DGPS Operations"]
               },
               {
-                name: "Priya Sharma, GISP",
+                name: "Manoj Kumar Yadav",
                 title: "GIS Director", 
-                experience: "12+ years experience",
+                experience: "10+ years experience",
                 specialties: ["Spatial Analysis", "Database Design", "Mapping Solutions"]
               },
               {
-                name: "Vikram Singh",
+                name: "Aryan Khan",
                 title: "Drone Operations Manager",
                 experience: "8+ years experience",
                 specialties: ["UAV Mapping", "Photogrammetry", "Aerial Surveys"]
