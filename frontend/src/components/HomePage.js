@@ -112,7 +112,7 @@ const HomePage = () => {
     {
       icon: <Plane className="w-12 h-12" />,
       title: "Drone Surveys",
-      description: "Advanced aerial surveying with high-precision drones for topographic mapping, site inspection, and comprehensive land analysis.",
+      description: "Advanced aerial surveying with high-precision drones for Topographic mapping, site inspection, and comprehensive land analysis.",
       image: "https://machone.in/wp-content/uploads/2024/01/blog-5-cover-image-1280x720.jpg"
     },
     {
