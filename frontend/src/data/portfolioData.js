@@ -55,7 +55,8 @@ export const portfolioCategories = [
     projects: [
       "Jahazpur Tehsil of Bhilwara District of the State of Rajasthan",
       "Aurangabad Region of the State of Maharashtra", 
-      "Rampurhat and Danta Region of the State of West Bengal"
+      "Rampurhat and Danta Region of the State of West Bengal",
+      "Kanpur and Azamgarh Region of the State of Uttar Pradesh"
     ],
     icon: "water",
     description: "Supporting India's ambitious water supply mission through comprehensive surveying and mapping"
