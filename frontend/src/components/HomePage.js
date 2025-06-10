@@ -123,7 +123,7 @@ const HomePage = () => {
     },
     {
       icon: <Compass className="w-12 h-12" />,
-      title: "topographic Surveys",
+      title: "Topographic Surveys",
       description: "Survey accurately maps the contours of the land, showing natural and man-made features in three dimensions. Essential for any construction or development project, it provides critical data on elevation, slopes, drainage, and existing structures, ensuring precise planning and design.",
       image: "https://images.pexels.com/photos/5802827/pexels-photo-5802827.jpeg"
     },
@@ -139,7 +139,7 @@ const HomePage = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: "Private Property Owners",
-      description: "Urban Planning, topographic mapping, and property assessments for individual landowners and developers."
+      description: "Urban Planning, Topographic mapping, and property assessments for individual landowners and developers."
     },
     {
       icon: <Building className="w-8 h-8" />,

@@ -47,7 +47,7 @@ export const portfolioCategories = [
       "Jaipur Division"
     ],
     icon: "railway",
-    description: "Precision topographic surveys for railway gradient verification across multiple divisions"
+    description: "Precision Topographic surveys for railway gradient verification across multiple divisions"
   },
   {
     title: "Jal Jeevan Mission (JJM)",
@@ -78,7 +78,7 @@ export const portfolioCategories = [
 export const portfolioItems = [
   {
     title: "Urban Development Mapping",
-    description: "Comprehensive aerial mapping for major residential development project spanning 200 acres with precise boundary determination and topographic analysis.",
+    description: "Comprehensive aerial mapping for major residential development project spanning 200 acres with precise boundary determination and Topographic analysis.",
     image: "https://images.pexels.com/photos/7937294/pexels-photo-7937294.jpeg",
     category: "Residential",
     location: "Metro Area",
@@ -98,7 +98,7 @@ export const portfolioItems = [
   },
   {
     title: "Commercial Complex Survey",
-    description: "Complete topographic and boundary survey for commercial development including parking layout and drainage analysis.",
+    description: "Complete Topographic and boundary survey for commercial development including parking layout and drainage analysis.",
     image: "https://images.pexels.com/photos/8333104/pexels-photo-8333104.jpeg",
     category: "Commercial",
     location: "Downtown District",

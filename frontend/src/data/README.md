@@ -22,7 +22,7 @@
 3. **Where to get images**:
    - **Free stock photos**: Unsplash.com, Pexels.com
    - **Your own photos**: Upload to your hosting service and use the URL
-   - **Search tips**: "aerial survey", "construction site", "land development", "topographic map"
+   - **Search tips**: "aerial survey", "construction site", "land development", "Topographic map"
 
 4. **Save the file** - Changes will appear immediately on your website
 
