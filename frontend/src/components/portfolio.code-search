@@ -1,0 +1,150 @@
+# Query: portfolio
+# ContextLines: 1
+
+48 results - 4 files
+
+frontend/PRODUCTION_READY.md:
+  51  - ✅ Fast loading globally
+  52: - ✅ Professional portfolio showcase
+  53  - ✅ Software products display
+
+  58  - ✅ Professional design with your logo
+  59: - ✅ Complete portfolio of actual Portfolio
+  60  - ✅ Services showcase with high-quality images
+
+frontend/src/components/HomePage.js:
+   27  } from 'lucide-react';
+   28: import { PrCategories } from '../data/portfolioData';
+   29  
+
+  146        title: "Government Agencies",
+  147:       description: "Municipal mapping, infrastructure planning, and compliance surveys for local and federal government Portfolio."
+  148      },
+
+  151        title: "Engineering Firms",
+  152:       description: "Technical surveying support, construction layout, and precision measurements for engineering Portfolio."
+  153      }
+
+  213              <motion.button
+  214:               onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+  215                whileHover={{ scale: 1.05 }}
+
+  218              >
+  219:               View Portfolio
+  220              </motion.button>
+
+  303              {[
+  304:               { icon: <Award className="w-12 h-12" />, title: "6 Years Experience", desc: "Proven track record in complex surveying Portfolio" },
+  305                { icon: <Star className="w-12 h-12" />, title: "99.9% Accuracy", desc: "Industry-leading precision with advanced equipment" },
+
+  407  
+  408:       {/* Portfolio Section */}
+  409:       <section id="portfolio" className="py-20 bg-slate-50">
+  410          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+  421              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+  422:               Showcasing our comprehensive portfolio of surveying and GIS Portfolio across government, infrastructure, and development sectors.
+  423              </p>
+
+  432            >
+  433:             {portfolioCategories.map((category, categoryIndex) => {
+  434                const getIcon = (iconType) => {
+
+  467  
+  468:                   {/* Portfolio List */}
+  469                    <div className="p-6">
+  470                      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+  471:                       {category.Portfolio.map((project, projectIndex) => (
+  472                          <motion.div
+
+  493  
+  494:           {/* Portfolio Summary */}
+  495            <motion.div
+
+  538              <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+  539:               Tailored surveying solutions for every client type, from individual property owners to large-scale government Portfolio.
+  540              </p>
+
+  947                  <li>Commercial Developments</li>
+  948:                 <li>Infrastructure Portfolio</li>
+  949                  <li>Government Contracts</li>
+
+frontend/src/data/portfolioData.js:
+    1: // AMP Geosolutions Portfolio Data - ACTUAL Portfolio
+    2: export const portfolioCategories = [
+    3    {
+    4:     title: "Portfolio Completed Under PSKS-2021 Rajasthan",
+    5      subtitle: "GIS Based Layout Plans",
+    6:     Portfolio: [
+    7        "Neem Ka Thana",
+
+   19      subtitle: "Urban Infrastructure Mapping",
+   20:     Portfolio: [
+   21        "Udaipurwati",
+
+   29      subtitle: "Revenue Management Solutions",
+   30:     Portfolio: [
+   31        "Ratangarh"
+
+   38      subtitle: "Indian Railways Infrastructure",
+   39:     Portfolio: [
+   40        "SSE/PW/N/KOTA in Kota Division",
+
+   54      subtitle: "Water Infrastructure Development",
+   55:     Portfolio: [
+   56        "Jahazpur Tehsil of Bhilwara District of the State of Rajasthan",
+
+   65      title: "Delhi Development Authority (DDA)",
+   66:     subtitle: "Urban Development Portfolio",
+   67:     Portfolio: [
+   68        "Conducting DGPS Survey and Creating Shape File of a Plot for DDA Vacant Lands for Delhi Development Authority, Ministry of Housing & Urban Affairs, Government of India",
+
+   72      icon: "government",
+   73:     description: "Large-scale urban development and property surveying Portfolio for Government of India"
+   74    }
+
+   76  
+   77: // Legacy portfolio items for reference (can be removed)
+   78: export const portfolioItems = [
+   79    {
+
+   84      location: "Metro Area",
+   85:     Portfolioize: "200 acres",
+   86      completionDate: "2024",
+
+   94      location: "State Highway 45",
+   95:     Portfolioize: "5 miles",
+   96      completionDate: "2023",
+
+  104      location: "Downtown District",
+  105:     Portfolioize: "15 acres",
+  106      completionDate: "2024",
+
+frontend/src/data/README.md:
+   1: # AMP Geosolutions Portfolio Management
+   2  
+   3: ## How to Add New Portfolio Items
+   4  
+   5: 1. **Open the file**: `/src/data/portfolioData.js`
+   6  
+   7: 2. **Add new portfolio item**: Copy the template at the bottom of the file and fill in your project details:
+   8  
+
+  15    location: "Where the project was located",
+  16:   Portfolioize: "Size/scope of project (e.g., '50 acres', '2 miles', '10 buildings')",
+  17    completionDate: "2024",
+
+  37    location: "City of Springfield",
+  38:   Portfolioize: "12 mile network",
+  39    completionDate: "2024",
+
+  43  
+  44: ## Tips for Great Portfolio Items
+  45  
+
+  55  - **Commercial**: Office buildings, retail centers, industrial facilities  
+  56: - **Infrastructure**: Roads, bridges, utilities, transportation Portfolio
+  57: - **Government**: Municipal Portfolio, federal contracts, public works
+  58: - **Environmental**: Environmental assessments, conservation Portfolio
+  59: - **Industrial**: Manufacturing facilities, energy Portfolio, mining
+  60  
