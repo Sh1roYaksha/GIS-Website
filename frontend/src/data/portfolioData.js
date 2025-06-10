@@ -8,7 +8,8 @@ export const portfolioCategories = [
       "Reengus", 
       "Paota-Pragpura",
       "Lalsot",
-      "Neemrana"
+      "Neemrana",
+      "Kotputli"
     ],
     icon: "layout",
     description: "Comprehensive GIS-based layout planning under Prashasan Shehron Ke Sang (PSKS) 2021"

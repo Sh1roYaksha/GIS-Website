@@ -139,7 +139,7 @@ const HomePage = () => {
     {
       icon: <Users className="w-8 h-8" />,
       title: "Private Property Owners",
-      description: "Boundary surveys, topographic mapping, and property assessments for individual landowners and developers."
+      description: "Urban Planning, topographic mapping, and property assessments for individual landowners and developers."
     },
     {
       icon: <Building className="w-8 h-8" />,
@@ -604,6 +604,11 @@ const HomePage = () => {
                 title: "Industrial Area Management System",
                 description: "Comprehensive management platform for industrial areas and manufacturing zones.",
                 icon: <Target className="w-12 h-12" />
+              },
+              {
+                title: "GIS Based Planning",
+                description: "Master Plan, Zonal Plan, Layout Plans",
+                icon: <Target className="w-12 h-12" />
               }
             ].map((product, index) => (
               <motion.div
@@ -932,7 +937,7 @@ const HomePage = () => {
                 <li>Drone Surveys</li>
                 <li>DGPS Surveys</li>
                 <li>Topographic Mapping</li>
-                <li>Boundary Surveys</li>
+                <li>Urban Planning</li>
               </ul>
             </div>
             <div>
