@@ -123,7 +123,7 @@ const HomePage = () => {
     },
     {
       icon: <Compass className="w-12 h-12" />,
-      title: "Topoghraphic Surveys",
+      title: "topographic Surveys",
       description: "Survey accurately maps the contours of the land, showing natural and man-made features in three dimensions. Essential for any construction or development project, it provides critical data on elevation, slopes, drainage, and existing structures, ensuring precise planning and design.",
       image: "https://images.pexels.com/photos/5802827/pexels-photo-5802827.jpeg"
     },
@@ -690,7 +690,7 @@ const HomePage = () => {
             >
               <div className="w-full h-80 bg-gradient-to-br from-slate-100 to-red-50 rounded-xl flex flex-col items-center justify-center p-6">
                 <MapPin className="w-16 h-16 text-red-600 mb-4" />
-                <h4 className="text-xl font-bold text-slate-800 mb-2">A.M.P. Consulting </h4>
+                <h4 className="text-xl font-bold text-slate-800 mb-2">A.M.P Consulting </h4>
                 <p className="text-center text-slate-600 mb-4 leading-relaxed">
                   <strong>Shree Shyam Tower</strong><br />
                   Kedia Palace Rd, Dadi Ka Phatak<br />
