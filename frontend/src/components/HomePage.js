@@ -606,7 +606,7 @@ const HomePage = () => {
                 icon: <Target className="w-12 h-12" />
               },
               {
-                title: "GIS Based Planning",
+                title: "GIS Based Urban Planning",
                 description: "Master Plan, Zonal Plan, Layout Plans",
                 icon: <Target className="w-12 h-12" />
               }
@@ -690,7 +690,7 @@ const HomePage = () => {
             >
               <div className="w-full h-80 bg-gradient-to-br from-slate-100 to-red-50 rounded-xl flex flex-col items-center justify-center p-6">
                 <MapPin className="w-16 h-16 text-red-600 mb-4" />
-                <h4 className="text-xl font-bold text-slate-800 mb-2">A.M.P Consulting </h4>
+                <h4 className="text-xl font-bold text-slate-800 mb-2">A.M.P CONSULTING </h4>
                 <p className="text-center text-slate-600 mb-4 leading-relaxed">
                   <strong>Shree Shyam Tower</strong><br />
                   Kedia Palace Rd, Dadi Ka Phatak<br />
