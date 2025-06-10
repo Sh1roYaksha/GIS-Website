@@ -56,7 +56,7 @@
 
 **Your AMP Geosolutions website includes:**
 - ✅ Professional design with your logo
-- ✅ Complete portfolio of actual projects
+- ✅ Complete portfolio of actual Portfolio
 - ✅ Services showcase with high-quality images
 - ✅ Products section (E-Municipal, Land Allotment, Industrial Management)
 - ✅ Contact form with office location and map

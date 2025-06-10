@@ -113,7 +113,7 @@ const HomePage = () => {
       icon: <Plane className="w-12 h-12" />,
       title: "Drone Surveys",
       description: "Advanced aerial surveying with high-precision drones for topographic mapping, site inspection, and comprehensive land analysis.",
-      image: "https://images.pexels.com/photos/32211979/pexels-photo-32211979.jpeg"
+      image: "https://machone.in/wp-content/uploads/2024/01/blog-5-cover-image-1280x720.jpg"
     },
     {
       icon: <Target className="w-12 h-12" />,
@@ -130,7 +130,7 @@ const HomePage = () => {
     {
       icon: <Layers className="w-12 h-12" />,
       title: "Ortho Image Processing",
-      description: "Advanced drone image processing delivering precise, high-resolution data for construction, urban planning, and land surveying. Our cutting-edge technology transforms aerial imagery into actionable insights for enhanced project efficiency and decision making.",
+      description: "Advanced drone image processing delivering precise, high-resolution data for construction, urban planning, and land surveying.",
       image: "https://images.pexels.com/photos/7937294/pexels-photo-7937294.jpeg"
     }
   ];
@@ -144,12 +144,12 @@ const HomePage = () => {
     {
       icon: <Building className="w-8 h-8" />,
       title: "Government Agencies",
-      description: "Municipal mapping, infrastructure planning, and compliance surveys for local and federal government projects."
+      description: "Municipal mapping, infrastructure planning, and compliance surveys for local and federal government Portfolio."
     },
     {
       icon: <Shield className="w-8 h-8" />,
       title: "Engineering Firms",
-      description: "Technical surveying support, construction layout, and precision measurements for engineering projects."
+      description: "Technical surveying support, construction layout, and precision measurements for engineering Portfolio."
     }
   ];
 
@@ -174,7 +174,7 @@ const HomePage = () => {
             <div className="hidden md:flex items-center space-x-8">
               <a href="#" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="text-slate-600 hover:text-red-600 transition-colors">Home</a>
               <a href="#services" className="text-slate-600 hover:text-red-600 transition-colors">Services</a>
-              <a href="#portfolio" className="text-slate-600 hover:text-red-600 transition-colors">Portfolio</a>
+              <a href="#projects" className="text-slate-600 hover:text-red-600 transition-colors">Projects</a>
               <a href="#products" className="text-slate-600 hover:text-red-600 transition-colors">Products</a>
               <a href="#contact" className="text-slate-600 hover:text-red-600 transition-colors">Contact</a>
             </div>
@@ -301,7 +301,7 @@ const HomePage = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { icon: <Award className="w-12 h-12" />, title: "6 Years Experience", desc: "Proven track record in complex surveying projects" },
+              { icon: <Award className="w-12 h-12" />, title: "6 Years Experience", desc: "Proven track record in complex surveying Portfolio" },
               { icon: <Star className="w-12 h-12" />, title: "99.9% Accuracy", desc: "Industry-leading precision with advanced equipment" },
               { icon: <CheckCircle className="w-12 h-12" />, title: "Licensed Professionals", desc: "Certified surveyors and licensed operators" },
               { icon: <Globe className="w-12 h-12" />, title: "Statewide Coverage", desc: "Comprehensive service area across the region" }
@@ -419,7 +419,7 @@ const HomePage = () => {
               Our Projects
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Showcasing our comprehensive portfolio of surveying and GIS projects across government, infrastructure, and development sectors.
+              Showcasing our comprehensive portfolio of surveying and GIS Portfolio across government, infrastructure, and development sectors.
             </p>
           </motion.div>
 
@@ -465,10 +465,10 @@ const HomePage = () => {
                     </p>
                   </div>
 
-                  {/* Projects List */}
+                  {/* Portfolio List */}
                   <div className="p-6">
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                      {category.projects.map((project, projectIndex) => (
+                      {category.Portfolio.map((project, projectIndex) => (
                         <motion.div
                           key={projectIndex}
                           variants={fadeInUp}
@@ -536,7 +536,7 @@ const HomePage = () => {
               Serving Diverse Clients
             </h2>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Tailored surveying solutions for every client type, from individual property owners to large-scale government projects.
+              Tailored surveying solutions for every client type, from individual property owners to large-scale government Portfolio.
             </p>
           </motion.div>
 
@@ -945,7 +945,7 @@ const HomePage = () => {
               <ul className="space-y-2 text-slate-400">
                 <li>Residential Properties</li>
                 <li>Commercial Developments</li>
-                <li>Infrastructure Projects</li>
+                <li>Infrastructure Portfolio</li>
                 <li>Government Contracts</li>
               </ul>
             </div>
@@ -958,7 +958,7 @@ const HomePage = () => {
             </div>
           </div>
           <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
-            <p>&copy; 2024 AMP Geosolutions. All rights reserved. Licensed Professional Surveyors.</p>
+            <p>&copy; 2025 AMP Geosolutions. All rights reserved. Licensed Professional Surveyors.</p>
           </div>
         </div>
       </footer>

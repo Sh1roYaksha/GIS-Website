@@ -1,9 +1,9 @@
-// AMP Geosolutions Portfolio Data - ACTUAL PROJECTS
+// AMP Geosolutions Portfolio Data - ACTUAL Portfolio
 export const portfolioCategories = [
   {
-    title: "Projects Completed Under PSKS-2021 Rajasthan",
+    title: "Portfolio Completed Under PSKS-2021 Rajasthan",
     subtitle: "GIS Based Layout Plans",
-    projects: [
+    Portfolio: [
       "Neem Ka Thana",
       "Reengus", 
       "Paota-Pragpura",
@@ -17,7 +17,7 @@ export const portfolioCategories = [
   {
     title: "GIS Based Existing City Survey",
     subtitle: "Urban Infrastructure Mapping",
-    projects: [
+    Portfolio: [
       "Udaipurwati",
       "Ramgarh (Alwar)"
     ],
@@ -27,7 +27,7 @@ export const portfolioCategories = [
   {
     title: "Property Tax Management System (PTIMS)",
     subtitle: "Revenue Management Solutions",
-    projects: [
+    Portfolio: [
       "Ratangarh"
     ],
     icon: "property",
@@ -36,7 +36,7 @@ export const portfolioCategories = [
   {
     title: "Railway Gradient Verification Topographic Survey",
     subtitle: "Indian Railways Infrastructure",
-    projects: [
+    Portfolio: [
       "SSE/PW/N/KOTA in Kota Division",
       "SSE/BUNDI in Kota Division", 
       "SSE/Mandalgarh in Kota Division",
@@ -52,7 +52,7 @@ export const portfolioCategories = [
   {
     title: "Jal Jeevan Mission (JJM)",
     subtitle: "Water Infrastructure Development",
-    projects: [
+    Portfolio: [
       "Jahazpur Tehsil of Bhilwara District of the State of Rajasthan",
       "Aurangabad Region of the State of Maharashtra", 
       "Rampurhat and Danta Region of the State of West Bengal",
@@ -63,14 +63,14 @@ export const portfolioCategories = [
   },
   {
     title: "Delhi Development Authority (DDA)",
-    subtitle: "Urban Development Projects",
-    projects: [
+    subtitle: "Urban Development Portfolio",
+    Portfolio: [
       "Conducting DGPS Survey and Creating Shape File of a Plot for DDA Vacant Lands for Delhi Development Authority, Ministry of Housing & Urban Affairs, Government of India",
       "Conducting Aerial Survey of Sanjay Van under DDA-Hort. (IV) New Delhi",
       "Conducting Door-To-Door Property Survey at various Regions in Delhi Pradhan Mantri Urban Development Yojana (PM-UDAY) Approximately - 40,000 Properties"
     ],
     icon: "government",
-    description: "Large-scale urban development and property surveying projects for Government of India"
+    description: "Large-scale urban development and property surveying Portfolio for Government of India"
   }
 ];
 
@@ -82,7 +82,7 @@ export const portfolioItems = [
     image: "https://images.pexels.com/photos/7937294/pexels-photo-7937294.jpeg",
     category: "Residential",
     location: "Metro Area",
-    projectSize: "200 acres",
+    Portfolioize: "200 acres",
     completionDate: "2024",
     services: ["Drone Survey", "DGPS Survey", "Topographic Mapping"]
   },
@@ -92,7 +92,7 @@ export const portfolioItems = [
     image: "https://images.unsplash.com/photo-1536420123832-cd5867531583?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDQ2NDF8MHwxfHNlYXJjaHwyfHxhZXJpYWwlMjBtYXBwaW5nfGVufDB8fHx8MTc0ODYwNzM3MXww&ixlib=rb-4.1.0&q=85",
     category: "Infrastructure",
     location: "State Highway 45",
-    projectSize: "5 miles",
+    Portfolioize: "5 miles",
     completionDate: "2023",
     services: ["DGPS Survey", "Utility Mapping", "Construction Layout"]
   },
@@ -102,7 +102,7 @@ export const portfolioItems = [
     image: "https://images.pexels.com/photos/8333104/pexels-photo-8333104.jpeg",
     category: "Commercial",
     location: "Downtown District",
-    projectSize: "15 acres",
+    Portfolioize: "15 acres",
     completionDate: "2024",
     services: ["Boundary Survey", "Topographic Mapping", "Drone Survey"]
   }

@@ -13,7 +13,7 @@
   image: "https://your-image-url.com/image.jpg",
   category: "Residential", // Choose from: Residential, Commercial, Infrastructure, Government, Environmental, Industrial
   location: "Where the project was located",
-  projectSize: "Size/scope of project (e.g., '50 acres', '2 miles', '10 buildings')",
+  Portfolioize: "Size/scope of project (e.g., '50 acres', '2 miles', '10 buildings')",
   completionDate: "2024",
   services: ["Drone Survey", "DGPS Survey", "Topographic Mapping"] // List all services you provided
 }
@@ -35,7 +35,7 @@
   image: "https://images.unsplash.com/photo-1581094794329-c8112a89af12",
   category: "Government",
   location: "City of Springfield",
-  projectSize: "12 mile network",
+  Portfolioize: "12 mile network",
   completionDate: "2024",
   services: ["DGPS Survey", "Utility Mapping", "Drone Survey"]
 }
@@ -53,10 +53,10 @@
 
 - **Residential**: Housing developments, private property surveys, subdivisions
 - **Commercial**: Office buildings, retail centers, industrial facilities  
-- **Infrastructure**: Roads, bridges, utilities, transportation projects
-- **Government**: Municipal projects, federal contracts, public works
-- **Environmental**: Environmental assessments, conservation projects
-- **Industrial**: Manufacturing facilities, energy projects, mining
+- **Infrastructure**: Roads, bridges, utilities, transportation Portfolio
+- **Government**: Municipal Portfolio, federal contracts, public works
+- **Environmental**: Environmental assessments, conservation Portfolio
+- **Industrial**: Manufacturing facilities, energy Portfolio, mining
 
 ## Services List
 
