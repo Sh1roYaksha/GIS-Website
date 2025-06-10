@@ -5,7 +5,7 @@
 **Office Address Successfully Added:**
 - **Complete Address**: Shree Shyam Tower, Kedia Palace Rd, Dadi Ka Phatak, Murlipura Scheme, Murlipura, Jaipur, Rajasthan 302039
 - **Phone**: +91-9587839666  
-- **Email**: Contact@ampgeosolution.com
+- **Email**: contact@ampgeosolution.com
 - **Plus Code**: XQC4+3W Jaipur, Rajasthan
 - **Google Maps Link**: https://maps.app.goo.gl/VBAZ7DDuqP6LBSodA
 
@@ -15,7 +15,7 @@ Your contact section now includes:
 
 **✅ Beautiful Contact Card:**
 - Phone with direct click-to-call (+91-9587839666)
-- Email with direct click-to-email (Contact@ampgeosolution.com)  
+- Email with direct click-to-email (contact@ampgeosolution.com)  
 - Complete office address with proper formatting
 - Professional red and white styling
 
@@ -60,7 +60,7 @@ Jaipur, Rajasthan 302039
 Plus Code: XQC4+3W Jaipur
 Google Maps: https://maps.app.goo.gl/VBAZ7DDuqP6LBSodA
 Phone: +91-9587839666
-Email: Contact@ampgeosolution.com
+Email: contact@ampgeosolution.com
 ```
 
 ## ✨ EVERYTHING IS COMPLETE AND WORKING!

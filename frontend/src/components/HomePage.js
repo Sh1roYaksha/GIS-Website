@@ -125,7 +125,7 @@ const HomePage = () => {
       icon: <Compass className="w-12 h-12" />,
       title: "Topographic Surveys",
       description: "Survey accurately maps the contours of the land, showing natural and man-made features in three dimensions. Essential for any construction or development project, it provides critical data on elevation, slopes, drainage, and existing structures, ensuring precise planning and design.",
-      image: "https://images.pexels.com/photos/5802827/pexels-photo-5802827.jpeg"
+      image: "https://cambridgemeasuredsurvey.co.uk/wp-content/uploads/2018/04/61f51d56-8763-4d75-885e-1aa8ed520383-1.webp"
     },
     {
       icon: <Layers className="w-12 h-12" />,
@@ -168,7 +168,7 @@ const HomePage = () => {
               <img 
                 src="/AMP%20Logo_001.png"
                 alt="AMP Geosolutions"
-                className="h-20 w-auto bg-white rounded-lg shadow-md p-2 hover:shadow-lg transition-all duration-300"
+                className="h-20 w-auto duration-300"
               />
             </div>
             <div className="hidden md:flex items-center space-x-8">
@@ -659,8 +659,8 @@ const HomePage = () => {
                   </div>
                   <div>
                     <p className="text-white font-semibold">Email</p>
-                    <a href="mailto:Contact@ampgeosolution.com" className="text-red-200 hover:text-white transition-colors">
-                      Contact@ampgeosolution.com
+                    <a href="mailto:contact@ampgeosolution.com" className="text-red-200 hover:text-white transition-colors">
+                      contact@ampgeosolution.com
                     </a>
                   </div>
                 </div>
@@ -739,12 +739,12 @@ const HomePage = () => {
                 <span>0141-3187836</span>
               </motion.a>
               <motion.a
-                href="mailto:Contact@ampgeosolution.com"
+                href="mailto:contact@ampgeosolution.com"
                 whileHover={{ scale: 1.05 }}
                 className="flex items-center space-x-3 bg-white/10 backdrop-blur-md text-white px-6 py-3 rounded-lg hover:bg-white/20 transition-all"
               >
                 <Mail className="w-5 h-5" />
-                <span>Contact@ampgeosolution.com</span>
+                <span>contact@ampgeosolution.com</span>
               </motion.a>
             </div>
 
@@ -916,7 +916,7 @@ const HomePage = () => {
       )}
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12">
+      <footer className="bg-offwhite-900 text-black py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
@@ -924,16 +924,16 @@ const HomePage = () => {
                 <img 
                   src="/AMP%20Logo_001.png"
                   alt="AMP Geosolutions"
-                  className="h-6 w-auto"
+                  className="h-20 w-auto"
                 />
               </div>
-              <p className="text-slate-400">
+              <p className="text-black-400">
                 Professional surveying services with cutting-edge technology and reliable expertise.
               </p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Services</h4>
-              <ul className="space-y-2 text-slate-400">
+              <ul className="space-y-2 text-black-400">
                 <li>Drone Surveys</li>
                 <li>DGPS Surveys</li>
                 <li>Topographic Mapping</li>
@@ -942,7 +942,7 @@ const HomePage = () => {
             </div>
             <div>
               <h4 className="font-bold mb-4">Coverage Areas</h4>
-              <ul className="space-y-2 text-slate-400">
+              <ul className="space-y-2 text-black-400">
                 <li>Residential Properties</li>
                 <li>Commercial Developments</li>
                 <li>Infrastructure Portfolio</li>
@@ -951,13 +951,13 @@ const HomePage = () => {
             </div>
             <div>
               <h4 className="font-bold mb-4">Contact Info</h4>
-              <ul className="space-y-2 text-slate-400">
+              <ul className="space-y-2 text-black-400">
                 <li>Phone: 0141-3187836</li>
-                <li>Email: Contact@ampgeosolution.com</li>
+                <li>Email: contact@ampgeosolution.com</li>
               </ul>
             </div>
           </div>
-          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-slate-400">
+          <div className="border-t border-slate-800 mt-8 pt-8 text-center text-black-400">
             <p>&copy; 2025 AMP Geosolutions. All rights reserved. Licensed Professional Surveyors.</p>
           </div>
         </div>
