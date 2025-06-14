@@ -200,9 +200,9 @@ const HomePage = () => {
           className="relative z-10 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto"
         >
           <h1 className="text-5xl md:text-7x2 font-bold text-white mb-7 leading-tight">
-            Precision Surveying
+            Advanced Surveying
             <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-white">
-              Advanced Technology
+              Precison Technology
             </span>
           </h1>
           <p className="text-xl md:text-2xl text-red-100 mb-8 max-w-3xl mx-auto leading-relaxed">
